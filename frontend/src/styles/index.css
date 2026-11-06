@@ -1,0 +1,68 @@
+@import 'ol/ol.css';
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Public Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Inter', sans-serif;
+  --font-headline: 'Orbitron', sans-serif;
+  --font-mono: 'DM Mono', 'Space Mono', monospace;
+
+  --color-nasa-red: #fc3d21;
+  --color-nasa-blue: #105bd8;
+  --color-nasa-darkblue: #0b3d91;
+  --color-mission-cyan: #00a6d2;
+
+  --color-space-950: #06090e;
+  --color-space-900: #0b0e14;
+  --color-space-850: #101622;
+  --color-space-800: #182232;
+  --color-space-700: #223046;
+}
+
+:root {
+  font-family: 'Public Sans', sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #06090e;
+  color: #f1f5f9;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Telemetry Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0e14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #223046;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
+
+/* OpenLayers Custom Styling */
+.ol-viewport {
+  background-color: #06090e !important;
+}
+
+.ol-attribution {
+  background: rgba(11, 14, 20, 0.9) !important;
+  color: #94a3b8 !important;
+  font-family: 'DM Mono', monospace !important;
+  font-size: 10px !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 4px !important;
+  padding: 2px 8px !important;
+}
