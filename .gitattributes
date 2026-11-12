@@ -1,0 +1,11 @@
+# Normalise text to LF in the repository; launchers keep the line endings their shells need.
+* text=auto
+*.bat text eol=crlf
+*.sh text eol=lf
+
+# Terrain rasters and other binary data: never touch line endings or diff them.
+*.i16 binary
+*.f32 binary
+*.tif binary
+*.png binary
+*.jpg binary

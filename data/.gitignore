@@ -1,0 +1,2 @@
+# Raw NASA downloads are never committed (spec section 20); tools/fetch_gale_dem.py re-creates them.
+raw/

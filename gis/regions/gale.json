@@ -1,0 +1,55 @@
+{
+  "id": "gale",
+  "name": "Gale Crater / Mount Sharp (Aeolis Mons)",
+  "bbox": { "min_lat": -4.85, "min_lon": 137.20, "max_lat": -4.45, "max_lon": 137.60 },
+  "crs": "IAU_2015:49900",
+  "products": [
+    {
+      "id": "dem",
+      "role": "elevation",
+      "service": "imageserver",
+      "layer": "Gale_DEM_SMG_1m",
+      "grid": {
+        "bbox": [137.12247113204074, -4.925474311955841, 137.72981290693286, -4.248963057145466],
+        "size": [1800, 2005]
+      },
+      "pixel_type": "F32",
+      "interpolation": "RSP_BilinearInterpolation",
+      "note": "Same request as engine/tools/fetch_gale_dem.py (whole service extent at ~20 m), so the routing grid stays the same."
+    },
+    {
+      "id": "hirise",
+      "role": "imagery",
+      "title": "HiRISE mosaic",
+      "service": "imageserver",
+      "layer": "curiosity_hirise_mosaic",
+      "grid": { "region": true, "resolution_m": 5 },
+      "pixel_type": "U8",
+      "interpolation": "RSP_BilinearInterpolation",
+      "nodata": 0,
+      "nodata_reason": "The service declares no no-data value; its data range starts at 1 (minValues [1]), so 0 marks pixels without data."
+    },
+    {
+      "id": "ctx",
+      "role": "imagery",
+      "title": "CTX mosaic",
+      "service": "wmts",
+      "layer": "Gale_CTX_BlockAdj_dd",
+      "tile_matrix": "12",
+      "note": "The Gale CTX mosaic is published as WMTS tiles only (no export service); level 12 is its finest (~10 m)."
+    }
+  ],
+  "vectors": [
+    { "id": "exploration_zone", "title": "Human Exploration Zone (NASA 2015 workshop)", "service": "EZMars", "layer": 0 },
+    { "id": "regions_of_interest", "title": "Exploration Zone regions of interest", "service": "EZMars", "layer": 3 },
+    { "id": "curiosity_traverse", "title": "Curiosity traverse (Mars Trek)", "service": "curiosity_path", "layer": 0 },
+    { "id": "geologic_units", "title": "Geologic units (USGS SIM 3292)", "service": "SIM3292_Global_Geology", "layer": 0 },
+    { "id": "place_names", "title": "Place names", "service": "outreach_nomenclature", "layer": 0 },
+    { "id": "dune_fields", "title": "Dune fields", "service": "Dune_Field", "layer": 0 }
+  ],
+  "evidence": {
+    "points": "data/raw/msl/MSL_waypoints.json",
+    "elevation_column": "elev_geoid",
+    "reason": "MSL rover localization published by NASA MMGIS (MSL_waypoints): planetocentric Mars coordinates"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "description": "MARGA's coordinate reference system for Mars. Single source of truth for Python (gis/marga_gis/crs.py) and TypeScript (shared/gis/marsCrs.ts). Generated from the PROJ database entry; do not edit by hand.",
+  "code": "IAU_2015:49900",
+  "name": "Mars (2015) - Sphere / Ocentric",
+  "body": "Mars",
+  "datum": "Mars (2015) - Sphere",
+  "radius_m": 3396190.0,
+  "metres_per_degree": 59274.69752330622,
+  "latitude": "planetocentric, degrees, -90..90",
+  "longitude": "east-positive, degrees, normalised to -180..180 (0..360 values are accepted and normalised)",
+  "prime_meridian": "Reference Meridian",
+  "authority_axis_order": [
+    "Geodetic latitude (north)",
+    "Geodetic longitude (east)"
+  ],
+  "marga_coordinate_order": "[longitude, latitude] everywhere in MARGA data, GeoJSON and OpenLayers (x = longitude, y = latitude)",
+  "wkt": "GEOGCRS[\"Mars (2015) - Sphere / Ocentric\",DATUM[\"Mars (2015) - Sphere\",ELLIPSOID[\"Mars (2015) - Sphere\",3396190,0,LENGTHUNIT[\"metre\",1]],ANCHOR[\"Viking 1 lander: 47.95137 W\"]],PRIMEM[\"Reference Meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],CS[ellipsoidal,2],AXIS[\"geodetic latitude (Lat)\",north,ORDER[1],ANGLEUNIT[\"degree\",0.0174532925199433]],AXIS[\"geodetic longitude (Lon)\",east,ORDER[2],ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"IAU\",49900,2015],REMARK[\"Use semi-major radius as sphere for interoperability. Source of IAU Coordinate systems: https://doi.org/10.1007/s10569-017-9805-5\"]]",
+  "proj4": "+proj=longlat +R=3396190 +no_defs +type=crs"
+}

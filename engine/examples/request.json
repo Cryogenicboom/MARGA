@@ -1,0 +1,8 @@
+{
+  "start": {"latitude": -4.5895, "longitude": 137.4417, "name": "Bradbury Landing Site"},
+  "destination": {"latitude": -4.6942, "longitude": 137.3531, "name": "Murray Buttes Sedimentary Outcrop"},
+  "constraints": {"walkingSpeedKmh": 1.2, "maxSlopeDegrees": 15, "maxEvaHours": 8,
+                  "reserveEvaHours": 1.5, "maxDistanceMeters": 10000, "scienceTimeMinPerStop": 30},
+  "objective": {"id": "obj_sedimentary_strata", "title": "Examine Sedimentary Stratigraphy"},
+  "options": {"metric": "terrain"}
+}

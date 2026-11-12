@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ScienceTarget",
+  "description": "MARGA Shared Schema for NASA-derived scientific targets in Gale Crater / Mount Sharp",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["mineralogical", "sedimentary", "hydration", "radiation", "geological"]
+    },
+    "latitude": {
+      "type": "number",
+      "minimum": -90,
+      "maximum": 90
+    },
+    "longitude": {
+      "type": "number",
+      "minimum": -180,
+      "maximum": 360
+    },
+    "elevation_m": {
+      "type": "number"
+    },
+    "source": {
+      "type": "string"
+    },
+    "instrument": {
+      "type": "string"
+    },
+    "product_id": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low", "unverified"]
+    },
+    "description": {
+      "type": "string"
+    },
+    "scientific_significance": {
+      "type": "string"
+    },
+    "data_limitations": {
+      "type": "string"
+    },
+    "sol_discovered": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "category",
+    "latitude",
+    "longitude",
+    "elevation_m",
+    "source",
+    "instrument",
+    "confidence",
+    "description"
+  ]
+}

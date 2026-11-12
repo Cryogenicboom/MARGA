@@ -1,0 +1,80 @@
+@import 'ol/ol.css';
+@import 'tailwindcss';
+
+/*
+ * MARGA design tokens. One restrained dark palette for a planning workstation:
+ * neutral surfaces, one accent for selection and the active route, and three status hues
+ * that only ever carry meaning (ok / warning / problem). System fonts keep the app offline.
+ */
+@theme {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+
+  --color-bg: #0f1216;
+  --color-panel: #151a20;
+  --color-raised: #1c222a;
+  --color-line: #2a313b;
+  --color-line-strong: #3a4350;
+  --color-fg: #e4e7eb;
+  --color-muted: #9aa3ae;
+  --color-faint: #6c7581;
+  --color-accent: #5aa2f0;
+  --color-ok: #5fb58a;
+  --color-warn: #d9a441;
+  --color-bad: #e06c5f;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.45;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Figures line up in tables and readouts. */
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+input[type='range'] {
+  accent-color: var(--color-accent);
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  accent-color: var(--color-accent);
+}
+
+:focus-visible {
+  outline: 1.5px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-line);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-line-strong);
+}
+
+.ol-viewport {
+  background-color: #0b0d10;
+}
