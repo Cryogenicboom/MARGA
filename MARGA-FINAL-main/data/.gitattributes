@@ -1,0 +1,4 @@
+# Raw NASA downloads are stored byte-for-byte as received (their SHA-256 checksums are in the manifests),
+# so git must never change their line endings.
+raw/** -text
+regions/*/raw/** -text

@@ -1,0 +1,11 @@
+node_modules
+dist
+dist-ssr
+*.local
+
+# API keys & secret env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

@@ -1,0 +1,10 @@
+# Core engine (the only hard dependency)
+numpy>=1.24
+# GeoTIFF import for terrain packages (data-preparation side)
+tifffile>=2023.1
+# Optional HTTP service (VITE_ENGINE_API_URL)
+fastapi>=0.110
+uvicorn[standard]>=0.29
+# Tests
+pytest>=7
+httpx>=0.27

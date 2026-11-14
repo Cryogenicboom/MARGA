@@ -1,0 +1,63 @@
+PDS_VERSION_ID                = PDS3
+RECORD_TYPE                   = STREAM
+RECORD_BYTES                  = 207
+FILE_RECORDS                  = 11
+^HEADER                     = ("CMB_718398059MIN36140971734CH00111P1.CSV",1)
+^SPREADSHEET                = ("CMB_718398059MIN36140971734CH00111P1.CSV",2)
+DATA_SET_ID                   = "MSL-M-CHEMIN-5-RDR-V1.0"
+PRODUCT_ID                    = "CMB_718398059MIN36140971734CH00111P1"
+PRODUCT_VERSION_ID            = "V1.0"
+RELEASE_ID                    = "0032"
+SOURCE_PRODUCT_ID             = "CMB_718398059RDA36140971734CH00111P1"
+PRODUCT_TYPE                  = "CHEMIN_MIN"
+INSTRUMENT_HOST_ID            = "MSL"
+INSTRUMENT_HOST_NAME          = "MARS SCIENCE LABORATORY"
+INSTRUMENT_ID                 = "CHEMIN"
+TARGET_NAME                   = "MARS"
+MSL:CALIBRATION_STANDARD_NAME = "N/A"
+MISSION_PHASE_NAME            = "PRIMARY SURFACE MISSION"
+PRODUCT_CREATION_TIME         = 2023-02-02T19:34:15 
+START_TIME                    = 2022-10-07T07:53:26.320
+STOP_TIME                     = "UNK"
+SPACECRAFT_CLOCK_START_COUNT  = "718398059.480"
+SPACECRAFT_CLOCK_STOP_COUNT   = "UNK"
+OBJECT                        = HEADER
+ BYTES                        = 23
+ HEADER_TYPE                  = TEXT
+ DESCRIPTION                  = "This header record contains column headings
+ for the following table." 
+END_OBJECT                    = HEADER
+
+OBJECT                        = SPREADSHEET
+ ROWS                         = 10
+ ROW_BYTES                    = 184
+ FIELDS                       = 3
+ FIELD_DELIMITER              = "COMMA"
+ ^STRUCTURE                   = "CHEMIN_MIN.FMT"
+DESCRIPTION                   = "This table contains mineral abundances and
+ analytical errors derived from diffraction-all K-alpha diffraction data for
+ the Canaima drill sample, analyzed in CheMin cell number 15a (Kapton
+ window). The analysis is based on RDA file
+ CMB_718398059RDA36140971734CH00111P1. That RDA file includes one night
+ of analysis, with files produced on sol 3614. Warm
+ temperatures inside CheMin (up to ~30 degrees centigrade, with
+ correspondingly low relative humidity) cause conversion of gypsum to
+ bassanite over time (Vaniman et al., 2018, American Mineralogist 103,
+ 1011-1020); analyses of Canaima on three different sols (3614, 3618,
+ 3627) showed that starkeyite observed on sol 3614 dehydrated in a similar
+ manner, but becoming X-ray amorphous rather than converting to a less
+ hydrous crystalline Mg-sulfate. For this reason we used the first night of
+ analysis to determine the in-situ abundances of gypsum, bassanite,
+ starkeyite, and amorphous material in Canaima. Mineral identifications,
+ abundances and analytical errors for crystalline phases were determined
+ using the program JADE. High intensity in the low 2-theta region and a
+ broad amorphous hump were modeled using FULLPAT to indicate that ~62 +/- 23
+ weight% of the total sample consists of X-ray amorphous material. Modeling
+ of the amorphous composition based on crystalline phase chemistry and
+ APXS chemistry for Canaima indicates that ~1/3 of the initial amorphous
+ material is amorphous Mg-sulfate. Column 1 of the table lists mineral 
+ identifications, column 2 lists the mineral abundances in weight percent,
+ and column 3 indicates the estimated 2-sigma analytical errors."
+END_OBJECT                    = SPREADSHEET
+END
+

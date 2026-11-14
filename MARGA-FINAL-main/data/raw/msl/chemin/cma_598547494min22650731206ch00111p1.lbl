@@ -1,0 +1,64 @@
+PDS_VERSION_ID                = PDS3
+RECORD_TYPE                   = STREAM
+RECORD_BYTES                  = 158
+FILE_RECORDS                  = 8
+^HEADER                     = ("CMA_598547494MIN22650731206CH00111P1.CSV",1)
+^SPREADSHEET                = ("CMA_598547494MIN22650731206CH00111P1.CSV",2)
+DATA_SET_ID                   = "MSL-M-CHEMIN-5-RDR-V1.0"
+PRODUCT_ID                    = "CMA_598547494MIN22650731206CH00111P1"
+PRODUCT_VERSION_ID            = "V1.0"
+RELEASE_ID                    = "0021"
+SOURCE_PRODUCT_ID             = "CMA_598547494RDA22650731206CH00111P1"
+PRODUCT_TYPE                  = "CHEMIN_MIN"
+INSTRUMENT_HOST_ID            = "MSL"
+INSTRUMENT_HOST_NAME          = "MARS SCIENCE LABORATORY"
+INSTRUMENT_ID                 = "CHEMIN"
+TARGET_NAME                   = "MARS"
+MSL:CALIBRATION_STANDARD_NAME = "N/A"
+MISSION_PHASE_NAME            = "PRIMARY SURFACE MISSION"
+PRODUCT_CREATION_TIME         = 2019-06-24T18:31:15 
+START_TIME                    = 2018-12-20T03:45:16.451
+STOP_TIME                     = "UNK"
+SPACECRAFT_CLOCK_START_COUNT  = "598547494.445"
+SPACECRAFT_CLOCK_STOP_COUNT   = "UNK"
+OBJECT                        = HEADER
+ BYTES                        = 23
+ HEADER_TYPE                  = TEXT
+ DESCRIPTION                  = "This header record contains column headings
+ for the following table." 
+END_OBJECT                    = HEADER
+
+OBJECT                        = SPREADSHEET
+ ROWS                         = 7
+ ROW_BYTES                    = 135
+ FIELDS                       = 3
+ FIELD_DELIMITER              = "COMMA"
+ ^STRUCTURE                   = "CHEMIN_MIN.FMT"
+DESCRIPTION                   = "This table contains mineral abundances and
+ analytical errors derived from diffraction-all K-alpha diffraction data for
+ the Rock Hall drill sample, analyzed in CheMin cell number 7b (Mylar
+ window). The analysis is based on RDA file
+ CMA_598547494RDA22650731206CH00111P1. That RDA file represents the first
+ four minor frames produced during the first night of analysis, on sol 2265.
+ Although a total of 15 minor frames were collected in this first night of
+ analysis, a drop in sample signal beyond the first four minor frames
+ indicated that much of the sample had moved to portions of the cell outside
+ the X-ray beam; when sample signal rose again toward the end of this
+ analysis, grain motion deteriorated significantly. Additional nights of
+ analysis on sols 2277-2278 and 2285-2286 showed no improvement in grain
+ motion, even as attempts were made to increase sample vibration intensity.
+ To focus on the highest quality data, the RDA file associated with this
+ label and used for mineralogical analysis includes only the first four
+ minor frames where signal remained strong and grain motion was good.
+ Mineral identifications, abundances and analytical errors for crystalline
+ phases, other than clay minerals, were determined using the program JADE.
+ In addition to the crystalline phases, the abundance of poorly-crystalline
+ clay minerals was modeled using the program FULLPAT at ~13 +/- 6 weight% of
+ the total sample. A broad rise in background is present and has been
+ modeled using FULLPAT to indicate that ~34 +/- 15 weight% of the total
+ sample consists of X-ray amorphous material. Column 1 of the table lists
+ mineral identifications, column 2 lists the mineral abundances in weight
+ percent, and column 3 indicates the estimated 2-sigma analytical errors."
+END_OBJECT                    = SPREADSHEET
+END
+

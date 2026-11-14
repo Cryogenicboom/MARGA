@@ -1,0 +1,55 @@
+PDS_VERSION_ID                = PDS3
+RECORD_TYPE                   = STREAM
+RECORD_BYTES                  = 289
+FILE_RECORDS                  = 15
+^HEADER                     = ("CMB_434685266MIN04190180786CH00113P1.CSV",1)
+^SPREADSHEET                = ("CMB_434685266MIN04190180786CH00113P1.CSV",2)
+DATA_SET_ID                   = "MSL-M-CHEMIN-5-RDR-V1.0"
+PRODUCT_ID                    = " CMB_434685266MIN04190180786CH00113P1"
+PRODUCT_VERSION_ID            = "V1.0"
+RELEASE_ID                    = "0005"
+SOURCE_PRODUCT_ID             = "CMB_434685266RDA04190180786CH00113P1"
+PRODUCT_TYPE                  = "CHEMIN_MIN"
+INSTRUMENT_HOST_ID            = "MSL"
+INSTRUMENT_HOST_NAME          = "MARS SCIENCE LABORATORY"
+INSTRUMENT_ID                 = "CHEMIN"
+TARGET_NAME                   = "MARS"
+MSL:CALIBRATION_STANDARD_NAME = "N/A"
+MISSION_PHASE_NAME            = "PRIMARY SURFACE MISSION"
+PRODUCT_CREATION_TIME         = 2014-02-20T17:10:00
+START_TIME                    = 2013-10-10T14:02:21.960
+STOP_TIME                     = "UNK"
+SPACECRAFT_CLOCK_START_COUNT  = "434685266.203"
+SPACECRAFT_CLOCK_STOP_COUNT   = "UNK"
+OBJECT                        = HEADER
+ BYTES                        = 23
+ HEADER_TYPE                  = TEXT
+ DESCRIPTION                  = "This header record contains column headings
+ for the following table." 
+END_OBJECT                    = HEADER
+
+OBJECT                        = SPREADSHEET
+ ROWS                         = 14
+ ROW_BYTES                    = 266
+ FIELDS                       = 3
+ FIELD_DELIMITER              = "COMMA"
+ ^STRUCTURE                   = "CHEMIN_MIN.FMT"
+ DESCRIPTION                  = "This table contains mineral abundances and
+ analytical errors derived from diffraction-all K-alpha diffraction data for
+ the Cumberland drill sample, analyzed in CheMin cell number 12b (Mylar
+window). This is a reanalysis of this sample, which was originally analyzed
+in sequences uploaded from sol 0283 to sol 0311, using RDA file
+CMB_422579177RDA02830060082CH12350P1. The reanalysis is based on RDA
+file CMB_434685266RDA04190180786CH00113P1. Mineral identifications,
+ abundances and analytical errors for crystalline phases, other than clay 
+ minerals, were determined using the program TOPAS.  The abundance of clay 
+ minerals was estimated separately, using the program FULLPAT, at ~19 +/- 9 
+ weight% of the total sample mass. In addition to the crystalline phases, a 
+ broad rise in background is present and has been modeled using the program 
+ FULLPAT to indicate that ~30 +/- 18 weight% of this sample consists of X-ray 
+ amorphous material. Column 1 of the table lists mineral identifications,
+column 2 lists the mineral abundances in weight percent, and column 3
+indicates the estimated 2-sigma analytical errors."
+END_OBJECT                    = SPREADSHEET
+END
+

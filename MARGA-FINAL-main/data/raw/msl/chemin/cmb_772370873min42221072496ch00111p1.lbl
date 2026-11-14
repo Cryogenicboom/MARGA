@@ -1,0 +1,52 @@
+PDS_VERSION_ID                = PDS3
+RECORD_TYPE                   = STREAM
+RECORD_BYTES                  = 163
+FILE_RECORDS                  = 8
+^HEADER                     = ("CMB_772370873MIN42221072496CH00111P1.CSV",1)
+^SPREADSHEET                = ("CMB_772370873MIN42221072496CH00111P1.CSV",2)
+DATA_SET_ID                   = "MSL-M-CHEMIN-5-RDR-V1.0"
+PRODUCT_ID                    = "CMB_772370873MIN42221072496CH00111P1"
+PRODUCT_VERSION_ID            = "V1.0"
+RELEASE_ID                    = "0037"
+SOURCE_PRODUCT_ID             = "CMB_772370873RDA42221072496CH00111P1"
+PRODUCT_TYPE                  = "CHEMIN_MIN"
+INSTRUMENT_HOST_ID            = "MSL"
+INSTRUMENT_HOST_NAME          = "MARS SCIENCE LABORATORY"
+INSTRUMENT_ID                 = "CHEMIN"
+TARGET_NAME                   = "MARS"
+MSL:CALIBRATION_STANDARD_NAME = "N/A"
+MISSION_PHASE_NAME            = "PRIMARY SURFACE MISSION"
+PRODUCT_CREATION_TIME         = 2024-10-14T15:02:15 
+START_TIME                    = 2024-06-23T00:28:50.535
+STOP_TIME                     = "UNK"
+SPACECRAFT_CLOCK_START_COUNT  = "772370873.097"
+SPACECRAFT_CLOCK_STOP_COUNT   = "UNK"
+OBJECT                        = HEADER
+ BYTES                        = 23
+ HEADER_TYPE                  = TEXT
+ DESCRIPTION                  = "This header record contains column headings
+ for the following table." 
+END_OBJECT                    = HEADER
+
+OBJECT                        = SPREADSHEET
+ ROWS                         = 7
+ ROW_BYTES                    = 140
+ FIELDS                       = 3
+ FIELD_DELIMITER              = "COMMA"
+ ^STRUCTURE                   = "CHEMIN_MIN.FMT"
+DESCRIPTION                   = "This table contains mineral abundances and
+ analytical errors derived from diffraction-all K-alpha diffraction data for
+ the Mammoth Lakes 2 sample in CheMin cell number 2a (Kapton window), which
+ had previously held the sample Mineral King. The analysis is based on RDA
+ file CMB_772370873RDA42221072496CH00111P1. Mineral identifications,
+ abundances and analytical errors for crystalline phases were determined
+ using the program JADE. A minor amount of goethite may be present but could
+ not be confirmed. High intensity in the low 2-theta region and a broad
+ amorphous hump were modeled using FULLPAT to indicate that ~60 +/- 23
+ weight% of the total sample consists of X-ray amorphous materials. All
+ errors cited are 2-sigma. Column 1 of the table lists mineral
+ identifications, column 2 lists the mineral abundances in weight percent,
+ and column 3 indicates the estimated analytical errors."
+END_OBJECT                    = SPREADSHEET
+END
+

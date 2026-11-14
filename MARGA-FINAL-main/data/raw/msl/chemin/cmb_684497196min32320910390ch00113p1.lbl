@@ -1,0 +1,53 @@
+PDS_VERSION_ID                = PDS3
+RECORD_TYPE                   = STREAM
+RECORD_BYTES                  = 189
+FILE_RECORDS                  = 10
+^HEADER                     = ("CMB_684497196MIN32320910390CH00113P1.CSV",1)
+^SPREADSHEET                = ("CMB_684497196MIN32320910390CH00113P1.CSV",2)
+DATA_SET_ID                   = "MSL-M-CHEMIN-5-RDR-V1.0"
+PRODUCT_ID                    = "CMB_684497196MIN32320910390CH00113P1"
+PRODUCT_VERSION_ID            = "V1.0"
+RELEASE_ID                    = "0029"
+SOURCE_PRODUCT_ID             = "CMB_684497196RDA32320910390CH00113P1"
+PRODUCT_TYPE                  = "CHEMIN_MIN"
+INSTRUMENT_HOST_ID            = "MSL"
+INSTRUMENT_HOST_NAME          = "MARS SCIENCE LABORATORY"
+INSTRUMENT_ID                 = "CHEMIN"
+TARGET_NAME                   = "MARS"
+MSL:CALIBRATION_STANDARD_NAME = "N/A"
+MISSION_PHASE_NAME            = "PRIMARY SURFACE MISSION"
+PRODUCT_CREATION_TIME         = 2022-02-09T22:14:45 
+START_TIME                    = 2021-09-09T22:53:54.465
+STOP_TIME                     = "UNK"
+SPACECRAFT_CLOCK_START_COUNT  = "684497196.340"
+SPACECRAFT_CLOCK_STOP_COUNT   = "UNK"
+OBJECT                        = HEADER
+ BYTES                        = 23
+ HEADER_TYPE                  = TEXT
+ DESCRIPTION                  = "This header record contains column headings
+ for the following table." 
+END_OBJECT                    = HEADER
+
+OBJECT                        = SPREADSHEET
+ ROWS                         = 9
+ ROW_BYTES                    = 166
+ FIELDS                       = 3
+ FIELD_DELIMITER              = "COMMA"
+ ^STRUCTURE                   = "CHEMIN_MIN.FMT"
+DESCRIPTION                   = "This table contains mineral abundances and
+ analytical errors derived from diffraction-all K-alpha diffraction data for
+ the Maria Gordon drill sample, analyzed in CheMin cell number 1a (Kapton
+ window). The analysis is based on RDA file
+ CMB_684497196RDA32320910390CH00113P1. Mineral identifications, abundances
+ and analytical errors for crystalline phases were determined using the
+ program JADE. The Maria Gordon sample may contain a small amount of
+ ankerite and/or dolomite, but if present the abundance is too low (~1% or
+ less) to report. High intensity in the low 2-theta region and a broad
+ amorphous hump were modeled using the program FULLPAT to indicate that ~54
+ +/- 24 weight% of the total sample consists of X-ray amorphous materials.
+ All errors cited are 2-sigma. Column 1 of the table lists mineral
+ identifications, column 2 lists the mineral abundances in weight percent,
+ and column 3 indicates the estimated analytical errors."
+END_OBJECT                    = SPREADSHEET
+END
+

@@ -1,0 +1,55 @@
+PDS_VERSION_ID                = PDS3
+RECORD_TYPE                   = STREAM
+RECORD_BYTES                  = 174
+FILE_RECORDS                  = 9
+^HEADER                     = ("CMB_609535789MIN23890751398CH00111P1.CSV",1)
+^SPREADSHEET                = ("CMB_609535789MIN23890751398CH00111P1.CSV",2)
+DATA_SET_ID                   = "MSL-M-CHEMIN-5-RDR-V1.0"
+PRODUCT_ID                    = "CMB_609535789MIN23890751398CH00111P1"
+PRODUCT_VERSION_ID            = "V1.0"
+RELEASE_ID                    = "0022"
+SOURCE_PRODUCT_ID             = "CMB_609535789RDA23890751398CH00111P1"
+PRODUCT_TYPE                  = "CHEMIN_MIN"
+INSTRUMENT_HOST_ID            = "MSL"
+INSTRUMENT_HOST_NAME          = "MARS SCIENCE LABORATORY"
+INSTRUMENT_ID                 = "CHEMIN"
+TARGET_NAME                   = "MARS"
+MSL:CALIBRATION_STANDARD_NAME = "N/A"
+MISSION_PHASE_NAME            = "PRIMARY SURFACE MISSION"
+PRODUCT_CREATION_TIME         = 2019-10-30T17:33:00 
+START_TIME                    = 2019-04-26T08:05:15.331
+STOP_TIME                     = "UNK"
+SPACECRAFT_CLOCK_START_COUNT  = "609535789.559"
+SPACECRAFT_CLOCK_STOP_COUNT   = "UNK"
+OBJECT                        = HEADER
+ BYTES                        = 23
+ HEADER_TYPE                  = TEXT
+ DESCRIPTION                  = "This header record contains column headings
+ for the following table." 
+END_OBJECT                    = HEADER
+
+OBJECT                        = SPREADSHEET
+ ROWS                         = 8
+ ROW_BYTES                    = 151
+ FIELDS                       = 3
+ FIELD_DELIMITER              = "COMMA"
+ ^STRUCTURE                   = "CHEMIN_MIN.FMT"
+DESCRIPTION                   = "This table contains mineral abundances and
+ analytical errors derived from diffraction-all K-alpha diffraction data for
+ the Kilmarie drill sample, analyzed in CheMin cell number 9b (Mylar
+ window). The analysis is based on RDA file
+ CMB_609535789RDA23890751398CH00111P1. That RDA file includes analyses
+ from sols 2389, 2391, 2395, 2396, and 2401. Mineral identifications,
+ abundances and analytical errors for crystalline phases, other than clay
+ minerals, were determined using the program JADE; these results are listed
+ in the table normalized to 100%. Column 1 of the table lists mineral
+ identifications, column 2 lists the mineral abundances in weight percent,
+ and column 3 indicates the estimated 1-sigma analytical errors between JADE
+ analyses by six independent analysts. In addition to the crystalline
+ phases, the abundance of clay minerals was estimated at ~28 +/- 12 weight%.
+ A broad rise in background is present and has been modeled using FULLPAT to
+ indicate that ~44 +/- 20 weight% of the total sample consists of X-ray
+ amorphous material."
+END_OBJECT                    = SPREADSHEET
+END
+

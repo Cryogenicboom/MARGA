@@ -1,0 +1,3 @@
+# Raw NASA downloads (data/raw, data/regions/*/raw) are kept in the repository so every layer can be
+# rebuilt offline. The fetch tools (engine/tools/fetch_gale_dem.py, python -m marga_gis.region / .msl)
+# re-create them from NASA if needed. Nothing in data/ is ignored.

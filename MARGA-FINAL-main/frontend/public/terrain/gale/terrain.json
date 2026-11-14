@@ -1,0 +1,53 @@
+{
+  "format": "marga-terrain-package",
+  "format_version": 1,
+  "geometry": {
+    "north_lat": -4.449891961005601,
+    "west_lon": 137.19990720833948,
+    "dlat_deg": 0.00033741209716228894,
+    "dlon_deg": 0.000337412097162289,
+    "nrows": 1187,
+    "ncols": 1187,
+    "radius_m": 3396190.0,
+    "registration": "cell centres; north_lat/west_lon are the first row/column centres"
+  },
+  "layers": {
+    "elevation": {
+      "file": "elevation.f32",
+      "dtype": "float32",
+      "byte_order": "little",
+      "order": "row-major, row 0 = north",
+      "nodata": "NaN",
+      "units": "m"
+    }
+  },
+  "dataset": {
+    "dataset_id": "GALE-DEM-001",
+    "name": "Gale merged HiRISE DEM (Mars Trek Gale_DEM_SMG_1m), ~20 m export",
+    "site_id": "GALE",
+    "mission": "MRO",
+    "instrument": "HiRISE (stereo-derived DEM)",
+    "data_type": "elevation",
+    "source": "https://trek.nasa.gov/mars/trekarcgis/rest/services/Gale_DEM_SMG_1m/ImageServer/exportImage?bbox=137.12247113204074,-4.925474311955841,137.72981290693286,-4.248963057145466&bboxSR=104905&imageSR=104905&size=1800,2005&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&f=image",
+    "crs": "IAU_2015:49900 (Mars (2015) - Sphere / Ocentric)",
+    "vertical_datum": "as served by Mars Trek (MOLA-referenced)",
+    "processing_level": "Mars Trek ImageServer export, bilinear resampling to ~20 m",
+    "spatial_resolution_m": 19.93,
+    "observation_period": null,
+    "synthetic": false,
+    "status": "unvalidated",
+    "limitations": [
+      "Resampled from a 1 m DEM to ~20 m: features smaller than ~20 m are not represented.",
+      "Cells the export marks as no-data are never treated as flat; run tools/check_terrain.py to look for undeclared fill values.",
+      "Coverage and vertical datum must be verified by the data team before operational use."
+    ],
+    "lineage": [
+      "source raster data/regions/gale/raw/dem/export_r0_c0.tif: 2005 x 1800 px, read with rasterio 1.5.2 (GDAL 3.12.2)",
+      "clipped to rows 595:1782, cols 229:1416",
+      "The file declares GCS_Mars_2000 (a=3396190 m, b=3376200 m, geographic). Its coordinate values are used unchanged as IAU_2015:49900 (planetocentric latitude), because: 1387 independent points (MSL_waypoints.json) agree with the DEM to a median 7.9 m (max 19 m) if its latitudes are planetocentric, versus 384.7 m (max 577 m) if planetographic (the conventions differ by 3.31 km here)"
+    ]
+  },
+  "checksums": {
+    "elevation.f32": "ec381a12d40fc1d7428b10030768b22f561ff0eced633f57a6f5875f910213aa"
+  }
+}

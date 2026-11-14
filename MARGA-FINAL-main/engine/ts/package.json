@@ -1,0 +1,19 @@
+{
+  "name": "@marga/engine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MARGA core engine (TypeScript port): offline terrain-aware A* routing and EVA budget logic",
+  "type": "module",
+  "main": "../../shared/engine/index.ts",
+  "scripts": {
+    "test": "node --test test/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=22.18"
+  }
+}

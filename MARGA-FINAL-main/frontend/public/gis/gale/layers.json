@@ -1,0 +1,612 @@
+{
+  "format": "marga-gis-layers",
+  "format_version": 1,
+  "site": "gale",
+  "generated": "2026-11-12",
+  "crs": {
+    "code": "IAU_2015:49900",
+    "name": "Mars (2015) - Sphere / Ocentric",
+    "note": "The file declares GCS_Mars_2000 (a=3396190 m, b=3376200 m, geographic). Its coordinate values are used unchanged as IAU_2015:49900 (planetocentric latitude), because: 1387 independent points (MSL_waypoints.json) agree with the DEM to a median 7.9 m (max 19 m) if its latitudes are planetocentric, versus 384.7 m (max 577 m) if planetographic (the conventions differ by 3.31 km here)"
+  },
+  "declared_crs": "GCS_Mars_2000 (a=3396190 m, b=3376200 m, geographic)",
+  "crs_evidence": {
+    "points_used": 1387,
+    "declared_crs_kind": "mars_ellipsoid_geographic",
+    "declared_flattening": 0.005886007555525485,
+    "shift_at_mean_latitude_km": 3.307761302891441,
+    "planetocentric": {
+      "median_abs_m": 7.865566162124196,
+      "p95_abs_m": 16.96024063455361,
+      "max_abs_m": 19.018676619828057
+    },
+    "planetographic": {
+      "median_abs_m": 384.65019144356756,
+      "p95_abs_m": 482.0743889346628,
+      "max_abs_m": 577.4079360646019
+    },
+    "verdict": "planetocentric"
+  },
+  "grid": {
+    "width": 1187,
+    "height": 1187,
+    "transform": [
+      0.000337412097162289,
+      0.0,
+      137.1997385022909,
+      0.0,
+      -0.00033741209716228894,
+      -4.4497232549570205
+    ],
+    "bounds": [
+      137.1997385022909,
+      -4.850231414288658,
+      137.60024666162255,
+      -4.4497232549570205
+    ],
+    "resolution_deg": [
+      0.000337412097162289,
+      0.00033741209716228894
+    ],
+    "resolution_m": {
+      "north_south": 19.999999999999087,
+      "east_west_at_centre": 19.934170884501622
+    },
+    "pixel_registration": "area (transform gives the outer corner of pixel 0,0)"
+  },
+  "layers": {
+    "elevation": {
+      "file": "elevation.tif",
+      "band": 1,
+      "dtype": "float32",
+      "units": "m",
+      "nodata": "NaN",
+      "min": -4636.2294921875,
+      "max": -1248.874267578125,
+      "valid_fraction": 1.0,
+      "vertical_datum": "as served by Mars Trek (MOLA-referenced)",
+      "sha256": "b0cd2229a5800cee6f0a42feb37b6efd4bdb6fb37351a5b9922f6f0478345658"
+    },
+    "hillshade": {
+      "file": "hillshade.tif",
+      "band": 1,
+      "dtype": "uint8",
+      "nodata": 0,
+      "values": "1-255 shade (dark to light), 0 = no data; display only, not elevation",
+      "azimuth_deg": 315.0,
+      "altitude_deg": 45.0,
+      "z_factor": 4.0,
+      "derived_from": "elevation",
+      "sha256": "6db9b744aa20fc5584377228f78795bf0e56b57eddb83cf7dbd7b7019460a115"
+    },
+    "slope": {
+      "file": "slope.tif",
+      "band": 1,
+      "dtype": "float32",
+      "units": "degree",
+      "nodata": "NaN",
+      "method": "Horn (1981) 3x3 on Mars ground spacing; engine marga_engine.terrain.analysis.slope_degrees (the slope the router uses)",
+      "min": 0.0013323255915167088,
+      "p50": 3.8656429249801576,
+      "p95": 21.293050173099996,
+      "p98": 26.502539003938743,
+      "max": 61.87274447047204,
+      "derived_from": "elevation",
+      "sha256": "1c7f397848a436300af5013fdc1ca114d130ac879cdd81afa699b4137273b9a5"
+    },
+    "roughness": {
+      "file": "roughness.tif",
+      "band": 1,
+      "dtype": "float32",
+      "units": "m",
+      "nodata": "NaN",
+      "method": "RMS of residuals from a least-squares plane in each 3x3 window; engine marga_engine.terrain.analysis.detrended_roughness (the roughness term the router uses)",
+      "min": 0.007450031018933365,
+      "p50": 0.26508262628373525,
+      "p95": 1.1229862078545727,
+      "p98": 1.6592517958966189,
+      "max": 10.106387165368146,
+      "derived_from": "elevation",
+      "sha256": "a4772f7cf553ee7374489920b8767b292dac9be98dbcfe4474a0344086fbcb4f"
+    }
+  },
+  "terrain_package": {
+    "path": "terrain/gale/",
+    "files": {
+      "elevation.f32": "ec381a12d40fc1d7428b10030768b22f561ff0eced633f57a6f5875f910213aa"
+    },
+    "alignment": "same rows, columns and transform as elevation.tif"
+  },
+  "dataset": {
+    "dataset_id": "GALE-DEM-001",
+    "name": "Gale merged HiRISE DEM (Mars Trek Gale_DEM_SMG_1m), ~20 m export",
+    "mission": "MRO",
+    "instrument": "HiRISE (stereo-derived DEM)",
+    "source": "https://trek.nasa.gov/mars/trekarcgis/rest/services/Gale_DEM_SMG_1m/ImageServer/exportImage?bbox=137.12247113204074,-4.925474311955841,137.72981290693286,-4.248963057145466&bboxSR=104905&imageSR=104905&size=1800,2005&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&f=image",
+    "status": "unvalidated",
+    "synthetic": false,
+    "limitations": [
+      "Resampled from a 1 m DEM to ~20 m: features smaller than ~20 m are not represented.",
+      "Cells the export marks as no-data are never treated as flat; run tools/check_terrain.py to look for undeclared fill values.",
+      "Coverage and vertical datum must be verified by the data team before operational use."
+    ]
+  },
+  "tools": {
+    "rasterio": "1.5.2",
+    "gdal": "3.12.2",
+    "pyproj": "3.8.0",
+    "proj": "9.8.1",
+    "generated_by": "gis/marga_gis/build_site.py"
+  },
+  "imagery": {
+    "hirise": {
+      "file": "imagery_hirise.tif",
+      "title": "HiRISE mosaic",
+      "product_label": "curiosity_hirise_mosaic",
+      "catalogue_title": "MRO HiRISE, Curiosity Roving Site Mosaic",
+      "mission": "Mars Reconnaissance Orbiter",
+      "instrument": "HiRISE",
+      "catalogue_created": "2020-06-25T22:50:16Z",
+      "resolution_m": 5.0,
+      "width": 4742,
+      "height": 4742,
+      "transform": [
+        8.43530242905761e-05,
+        0.0,
+        137.2,
+        0.0,
+        -8.43530242905761e-05,
+        -4.45
+      ],
+      "dtype": "uint8",
+      "nodata": 0,
+      "values": "8-bit brightness as delivered; 0 = no data",
+      "coverage_fraction": 0.9938,
+      "registration": {
+        "method": "NCC of DEM slope vs image gradient magnitude on the DEM grid, integer shifts",
+        "reference": "DEM",
+        "cell_m": 20.0,
+        "max_shift_m": 300,
+        "ncc_at_zero_shift": 0.294,
+        "ncc_best": 0.301,
+        "peak_significance_sigma": 4.6,
+        "image_offset_m": {
+          "north": 20.0,
+          "east": -20.0,
+          "total": 28.3
+        },
+        "offset_meaning": "where the image's features lie relative to the same features in the reference (negative north = south, negative east = west); the image is displayed as delivered, not shifted",
+        "verdict": "aligned"
+      },
+      "crs_note": "Mars Trek serves this product in spatial reference 104905 (GCS_Mars_2000), like the DEM; its coordinates are used unchanged as IAU_2015:49900, as for the DEM (see crs.note), and its registration to the DEM is checked below.",
+      "source": {
+        "service": "ImageServer exportImage",
+        "layer": "curiosity_hirise_mosaic",
+        "requests": [
+          "https://trek.nasa.gov/mars/trekarcgis/rest/services/curiosity_hirise_mosaic/ImageServer/exportImage?bbox=137.2%2C-4.795847399591362%2C137.6000020411859%2C-4.45&bboxSR=104905&imageSR=104905&size=4742%2C4100&format=tiff&pixelType=U8&interpolation=RSP_BilinearInterpolation&f=image",
+          "https://trek.nasa.gov/mars/trekarcgis/rest/services/curiosity_hirise_mosaic/ImageServer/exportImage?bbox=137.2%2C-4.8500020411859115%2C137.6000020411859%2C-4.795847399591362&bboxSR=104905&imageSR=104905&size=4742%2C642&format=tiff&pixelType=U8&interpolation=RSP_BilinearInterpolation&f=image"
+        ]
+      },
+      "fetched_at": "2026-11-12T16:45:54Z",
+      "sha256": "9a7f94e77b25c245f940ca94af09bbd2a6617d68a8f38cb9c80e1d33533005ea",
+      "registration_summary": {
+        "verdict": "aligned",
+        "offset_m": {
+          "north": 20.0,
+          "east": -20.0,
+          "total": 28.3
+        },
+        "basis": "DEM slope check (image edges against DEM slope)"
+      }
+    },
+    "ctx": {
+      "file": "imagery_ctx.tif",
+      "title": "CTX mosaic",
+      "product_label": "Gale_CTX_BlockAdj_dd",
+      "catalogue_title": "MRO CTX, Gale Crater Mosaic",
+      "mission": "Mars Reconnaissance Orbiter",
+      "instrument": "CTX",
+      "catalogue_created": "2020-06-25T22:48:07Z",
+      "resolution_m": 10.18,
+      "width": 2332,
+      "height": 2331,
+      "transform": [
+        0.000171661376953125,
+        0.0,
+        137.1998405456543,
+        0.0,
+        -0.000171661376953125,
+        -4.449977874755859
+      ],
+      "dtype": "uint8",
+      "nodata": 0,
+      "values": "8-bit brightness as delivered; 0 = no data; 78 valid pixels of value 0 stored as 1",
+      "coverage_fraction": 1.0,
+      "registration": {
+        "method": "NCC of DEM slope vs image gradient magnitude on the DEM grid, integer shifts",
+        "reference": "DEM",
+        "cell_m": 20.0,
+        "max_shift_m": 300,
+        "ncc_at_zero_shift": 0.184,
+        "ncc_best": 0.198,
+        "peak_significance_sigma": 1.8,
+        "image_offset_m": {
+          "north": -60.0,
+          "east": -100.0,
+          "total": 116.6
+        },
+        "offset_meaning": "where the image's features lie relative to the same features in the reference (negative north = south, negative east = west); the image is displayed as delivered, not shifted",
+        "verdict": "inconclusive"
+      },
+      "crs_note": "Mars Trek serves this product in spatial reference 104905 (GCS_Mars_2000), like the DEM; its coordinates are used unchanged as IAU_2015:49900, as for the DEM (see crs.note), and its registration to the DEM is checked below.",
+      "source": {
+        "service": "WMTS",
+        "layer": "Gale_CTX_BlockAdj_dd",
+        "tile_matrix": "12",
+        "tile_url_template": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/{z}/{row}/{col}.png",
+        "tiles": {
+          "requested": 100,
+          "downloaded": 100,
+          "cached": 0,
+          "missing": 0,
+          "bytes": 4892412,
+          "index_file": "raw/ctx/tiles.json",
+          "index_sha256": "128e9bd13ef1c295923487e8a0572d0d594f894546c2513fbe86c8fd95f6533c"
+        }
+      },
+      "fetched_at": "2026-11-12T16:46:16Z",
+      "sha256": "9e9185957a4e5d543b3c2095e807764b82ceb9cfdc61ec403bbae6ff96bec36a",
+      "cross_check": {
+        "method": "NCC of high-passed brightness (15-cell box) on a common grid, integer shifts",
+        "reference": "imagery:hirise",
+        "cell_m": 10.18,
+        "max_shift_m": 305,
+        "ncc_at_zero_shift": -0.003,
+        "ncc_best": 0.099,
+        "peak_significance_sigma": 12.3,
+        "image_offset_m": {
+          "north": -91.6,
+          "east": -81.4,
+          "total": 122.5
+        },
+        "offset_meaning": "where the image's features lie relative to the same features in the reference (negative north = south, negative east = west); the image is displayed as delivered, not shifted",
+        "verdict": "offset"
+      },
+      "registration_summary": {
+        "verdict": "offset",
+        "offset_m": {
+          "north": -91.6,
+          "east": -81.4,
+          "total": 122.5
+        },
+        "basis": "Image cross-check against the HiRISE mosaic, which is aligned with the DEM (the DEM slope check alone was inconclusive)"
+      }
+    }
+  },
+  "vectors": {
+    "exploration_zone": {
+      "file": "vectors/exploration_zone.geojson",
+      "title": "Human Exploration Zone (NASA 2015 workshop)",
+      "geometry_type": "esriGeometryPoint",
+      "features_in_region": 1,
+      "features_fetched": 1,
+      "clipped_to_region": true,
+      "fields": [
+        "FID",
+        "name",
+        "abstract",
+        "lat",
+        "lon",
+        "elev",
+        "reviewer",
+        "LLE_Source",
+        "Type",
+        "abstract_l",
+        "presentati",
+        "video_link"
+      ],
+      "source": "https://trek.nasa.gov/mars/trekarcgis/rest/services/EZMars/MapServer/0?f=json",
+      "copyright": null,
+      "crs_note": "Esri JSON from EZMars/0 in spatial reference 104905; coordinates used unchanged as IAU_2015:49900 (the same Mars Trek convention verified for the DEM).",
+      "check": null,
+      "fetched_at": "2026-11-12T16:46:18Z",
+      "sha256": "db9f1892bd66877d90de6ab1e7e6f66ab6435643aa356179ba617a13ea96a5d9"
+    },
+    "regions_of_interest": {
+      "file": "vectors/regions_of_interest.geojson",
+      "title": "Exploration Zone regions of interest",
+      "geometry_type": "esriGeometryPolygon",
+      "features_in_region": 5,
+      "features_fetched": 5,
+      "clipped_to_region": true,
+      "fields": [
+        "FID",
+        "objectid",
+        "name",
+        "confidence",
+        "ez_name",
+        "ez_abstrac",
+        "name_1",
+        "latitude",
+        "longitude",
+        "elevation",
+        "scibio_1_d",
+        "scibio_1_p",
+        "scibio_12_",
+        "scibio_121",
+        "scibio_2_d",
+        "scibio_2_p",
+        "sciatm_1_d",
+        "sciatm_1_p",
+        "sciatm_2_d",
+        "sciatm_2",
+        "sciatm_3_d",
+        "sciatm_3_p",
+        "sciatm_4_d",
+        "sciatm_4_p",
+        "sciatm_5_d",
+        "sciatm_5_p",
+        "scigeo_1_d",
+        "scigeo_1_p",
+        "scigeo_2_d",
+        "scigeo_2_p",
+        "scigeo_3_d",
+        "scigeo_3_p",
+        "scigeo_4_d",
+        "scigeo_4_p",
+        "scigeo_5_d",
+        "scigeo_5_p",
+        "scigeo_6_d",
+        "scigeo_6_p",
+        "scigeo_7_d",
+        "scigeo_7_p",
+        "scigeo_8_d",
+        "scigeo_8_p",
+        "scigeo_9_d",
+        "scigeo_9_p",
+        "scigeo_10_",
+        "scigeo_101",
+        "isruw_1_d",
+        "isruw_1_p",
+        "isruw_2_d",
+        "isruw_2_p",
+        "isruw_3_d",
+        "isruw_3_p",
+        "isruw_4_d",
+        "isruw_4_p",
+        "isruw_5_d",
+        "isruw_5_p",
+        "isruw_6_d",
+        "isruw_6_p",
+        "isruw_7_d",
+        "isruw_7_p",
+        "isruw_8_d",
+        "isruw_8_p",
+        "isruw_9_d",
+        "isruw_9_p",
+        "isruw_10_d",
+        "isruw_10_p",
+        "isruce_1_d",
+        "isruce_1_p",
+        "isruce_2_d",
+        "isruce_2_p",
+        "isruce_3_d",
+        "isruce_3_p",
+        "isruce_4_d",
+        "isruce_4_p",
+        "isruce_5_d",
+        "isruce_5_p",
+        "isruce_6_d",
+        "isruce_6_p",
+        "isruf_1_d",
+        "isruf_1_p",
+        "isruf_2_d",
+        "isruf_2_p",
+        "isruf_3_d",
+        "isruf_3_p",
+        "isruf_4_d",
+        "isruf_4_p",
+        "isrums_1_d",
+        "isrums_1_p",
+        "isrums_2_d",
+        "isrums_2_p",
+        "isrums_3_d",
+        "isrums_3_p",
+        "isrums_4_d",
+        "isrums_4_p",
+        "isrums_5_d",
+        "isrums_5_p",
+        "isrums_6_d",
+        "isrums_6_p",
+        "isrums_7_d",
+        "isrums_7_p",
+        "isrums_9_d",
+        "isrums_9_p",
+        "ls",
+        "hz",
+        "roi"
+      ],
+      "source": "https://trek.nasa.gov/mars/trekarcgis/rest/services/EZMars/MapServer/3?f=json",
+      "copyright": null,
+      "crs_note": "Esri JSON from EZMars/3 in spatial reference 104905; coordinates used unchanged as IAU_2015:49900 (the same Mars Trek convention verified for the DEM).",
+      "check": null,
+      "fetched_at": "2026-11-12T16:46:21Z",
+      "sha256": "91146c9b1cf65cde190ddcf491288fb5249d57094a24f75892b3cc53285a7b7d"
+    },
+    "curiosity_traverse": {
+      "file": "vectors/curiosity_traverse.geojson",
+      "title": "Curiosity traverse (Mars Trek)",
+      "geometry_type": "esriGeometryPolyline",
+      "features_in_region": 1,
+      "features_fetched": 1,
+      "clipped_to_region": true,
+      "fields": [
+        "FID",
+        "Id"
+      ],
+      "source": "https://trek.nasa.gov/mars/trekarcgis/rest/services/curiosity_path/MapServer/0?f=json",
+      "copyright": null,
+      "crs_note": "Esri JSON from curiosity_path/0 in spatial reference 104905; coordinates used unchanged as IAU_2015:49900 (the same Mars Trek convention verified for the DEM).",
+      "check": {
+        "method": "distance from MMGIS MSL waypoints (planetocentric) to the traverse line, on the Mars sphere",
+        "by_sol": {
+          "sols 0-999": {
+            "points": 298,
+            "median_m": 0.0,
+            "within_30m": 1.0
+          },
+          "sols 1000-1999": {
+            "points": 314,
+            "median_m": 0.0,
+            "within_30m": 1.0
+          },
+          "sols 2000-2999": {
+            "points": 199,
+            "median_m": 235.8,
+            "within_30m": 0.156
+          },
+          "sols 3000-5999": {
+            "points": 576,
+            "median_m": 3228.3,
+            "within_30m": 0.0
+          }
+        },
+        "latest_sol_on_line": 2257,
+        "first_sol_off_line_after_that": 2297,
+        "latest_waypoint_sol": 5069
+      },
+      "fetched_at": "2026-11-12T16:46:26Z",
+      "sha256": "a1a36938494f9a0881022d9a9d718b7def2beb6c901dfaa440db9683060c5171"
+    },
+    "geologic_units": {
+      "file": "vectors/geologic_units.geojson",
+      "title": "Geologic units (USGS SIM 3292)",
+      "geometry_type": "esriGeometryPolygon",
+      "features_in_region": 2,
+      "features_fetched": 2,
+      "clipped_to_region": true,
+      "fields": [
+        "FID",
+        "OBJECTID",
+        "Shape_Leng",
+        "Shape_Area",
+        "Unit",
+        "UnitDesc",
+        "SphArea_km"
+      ],
+      "source": "https://trek.nasa.gov/mars/trekarcgis/rest/services/SIM3292_Global_Geology/MapServer/0?f=json",
+      "copyright": "Reference: K.L. Tanaka, J.A. Skinner, Jr., J.M. Dohm, R.P. Irwin, III, E.J. Kolb, C.M. Fortezzo, Thomas Platz, G.G. Michael, and T.M. Hare, 2014, Geologic Map of Mars, Scale 1:20,000,000, U.S. Geological Survey Scientific Investigations Map SIM 3292. URL: http://pubs.usgs.gov/sim/3292",
+      "crs_note": "Esri JSON from SIM3292_Global_Geology/0 in spatial reference 104905; coordinates used unchanged as IAU_2015:49900 (the same Mars Trek convention verified for the DEM).",
+      "check": null,
+      "fetched_at": "2026-11-12T16:46:29Z",
+      "sha256": "8b9ea06dbdc5d5a6656c4d8055a8e4738633da9ceeed755f58fd5b1e8d30c34f"
+    },
+    "place_names": {
+      "file": "vectors/place_names.geojson",
+      "title": "Place names",
+      "geometry_type": "esriGeometryPoint",
+      "features_in_region": 2,
+      "features_fetched": 2,
+      "clipped_to_region": true,
+      "fields": [
+        "FID",
+        "origin",
+        "diameter",
+        "code",
+        "max_lon",
+        "quad_code",
+        "clean_name",
+        "continent",
+        "ethnicity",
+        "center_lat",
+        "category",
+        "center_lon",
+        "score",
+        "approvaldt",
+        "type",
+        "min_lat",
+        "link",
+        "x",
+        "approval",
+        "LABEL",
+        "desc_",
+        "quad_name",
+        "notes",
+        "max_lat",
+        "y",
+        "min_lon",
+        "level"
+      ],
+      "source": "https://trek.nasa.gov/mars/trekarcgis/rest/services/outreach_nomenclature/MapServer/0?f=json",
+      "copyright": null,
+      "crs_note": "Esri JSON from outreach_nomenclature/0 in spatial reference 104905; coordinates used unchanged as IAU_2015:49900 (the same Mars Trek convention verified for the DEM).",
+      "check": null,
+      "fetched_at": "2026-11-12T16:46:31Z",
+      "sha256": "5a81a9f7bef72799e527992fc95b86e8fbe9c285072e063e674a975e83678f43"
+    },
+    "dune_fields": {
+      "file": "vectors/dune_fields.geojson",
+      "title": "Dune fields",
+      "geometry_type": "esriGeometryPolygon",
+      "features_in_region": 1,
+      "features_fetched": 1,
+      "clipped_to_region": true,
+      "fields": [
+        "FID",
+        "Shape_Leng",
+        "Shape_Area",
+        "Dune_Lon",
+        "Dune_Lat",
+        "Dune_ID",
+        "Dune_Type",
+        "B_1",
+        "Bd_1",
+        "D_1",
+        "L_1",
+        "S_1",
+        "SS_1",
+        "T_1",
+        "U_1",
+        "Confidence",
+        "Type_Image",
+        "Area_sinu_",
+        "MDHeight",
+        "Volume_1",
+        "Volume_2",
+        "Avg_El",
+        "CcDcAzimut",
+        "SF_1_Az",
+        "SF_1_Count",
+        "SF_2_Azimu",
+        "SF_2_Count",
+        "SF_3_Azimu",
+        "SF_3_Count",
+        "SF_4_Azimu",
+        "SF_4_Count",
+        "Environ",
+        "Cr_Lon_Eas",
+        "Cr_Lat",
+        "Crater_BID",
+        "Cr_Area_si",
+        "Cr_Diam_1",
+        "Mars_5M_Ch",
+        "IR",
+        "VIS",
+        "MOC",
+        "Comments_1"
+      ],
+      "source": "https://trek.nasa.gov/mars/trekarcgis/rest/services/Dune_Field/MapServer/0?f=json",
+      "copyright": null,
+      "crs_note": "Esri JSON from Dune_Field/0 in spatial reference 104905; coordinates used unchanged as IAU_2015:49900 (the same Mars Trek convention verified for the DEM).",
+      "check": null,
+      "fetched_at": "2026-11-12T16:46:34Z",
+      "sha256": "54666712fb7dba8ed4fc5ec5edd794193fdab9bafddb15564229da2c6a70d918"
+    }
+  },
+  "acquisition": {
+    "package_manifest": "data/regions/gale/manifest.json",
+    "source": "NASA Mars Trek (https://trek.nasa.gov/mars/)",
+    "notes": [
+      "Mars Trek's FGDC metadata pages (TrekWS/rest/cat/metadata/fgdc) returned empty responses when checked (2026-11); provenance is taken from the catalogue record, the service metadata and the request URLs."
+    ]
+  }
+}

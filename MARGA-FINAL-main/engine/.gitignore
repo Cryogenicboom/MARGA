@@ -1,0 +1,6 @@
+# Python caches (also covered by the root .gitignore)
+__pycache__/
+*.py[cod]
+.pytest_cache/
+# TypeScript test harness dependencies
+ts/node_modules/

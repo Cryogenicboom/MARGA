@@ -1,0 +1,68 @@
+PDS_VERSION_ID                = PDS3
+RECORD_TYPE                   = STREAM
+RECORD_BYTES                  = 154
+FILE_RECORDS                  = 8
+^HEADER                     = ("CMB_656073671MIN29120822188CH00111P1.CSV",1)
+^SPREADSHEET                = ("CMB_656073671MIN29120822188CH00111P1.CSV",2)
+DATA_SET_ID                   = "MSL-M-CHEMIN-5-RDR-V1.0"
+PRODUCT_ID                    = "CMB_656073671MIN29120822188CH00111P1"
+PRODUCT_VERSION_ID            = "V1.0"
+RELEASE_ID                    = "0027"
+SOURCE_PRODUCT_ID             = "CMB_656073671RDA29120822188CH00111P1"
+PRODUCT_TYPE                  = "CHEMIN_MIN"
+INSTRUMENT_HOST_ID            = "MSL"
+INSTRUMENT_HOST_NAME          = "MARS SCIENCE LABORATORY"
+INSTRUMENT_ID                 = "CHEMIN"
+TARGET_NAME                   = "MARS"
+MSL:CALIBRATION_STANDARD_NAME = "N/A"
+MISSION_PHASE_NAME            = "PRIMARY SURFACE MISSION"
+PRODUCT_CREATION_TIME         = 2021-06-24T14:35:15 
+START_TIME                    = 2020-10-15T23:24:00.240
+STOP_TIME                     = "UNK"
+SPACECRAFT_CLOCK_START_COUNT  = "656073671.193"
+SPACECRAFT_CLOCK_STOP_COUNT   = "UNK"
+OBJECT                        = HEADER
+ BYTES                        = 23
+ HEADER_TYPE                  = TEXT
+ DESCRIPTION                  = "This header record contains column headings
+ for the following table." 
+END_OBJECT                    = HEADER
+
+OBJECT                        = SPREADSHEET
+ ROWS                         = 7
+ ROW_BYTES                    = 131
+ FIELDS                       = 3
+ FIELD_DELIMITER              = "COMMA"
+ ^STRUCTURE                   = "CHEMIN_MIN.FMT"
+DESCRIPTION                   = "This table contains mineral abundances and
+ analytical errors derived from diffraction-all K-alpha diffraction data for
+ the Groken drill sample, analyzed in CheMin cell number 9a (Mylar
+ window). The analysis is based on RDA file
+ CMB_656073671RDA29120822188CH00111P1. Mineral identifications, abundances
+ and analytical errors for crystalline phases, other than clay minerals,
+ were determined using the program JADE. Mineral identification as
+ Fe-carbonate may include siderite and/or ankerite. In addition to these
+ crystalline phases, the program FULLPAT was used to estimate the abundance
+ of poorly crystalline clay minerals at ~30 +/- 16 weight% of the total
+ sample. High intensity in the low 2-theta region and a broad amorphous hump
+ were modeled using FULLPAT to indicate that ~26 +/- 14 weight% of the total
+ sample consists of X-ray amorphous materials. Column 1 of the table lists
+ mineral identifications, column 2 lists the mineral abundances in weight
+ percent, and column 3 indicates the estimated analytical errors. All errors
+ cited are 2-sigma.
+    The RDA file for Groken includes a relatively sharp peak at 11.14
+ degrees (9.22 angstroms). This peak is found in several other samples
+ within the Glen Torridon stratigraphic unit at Gale crater (e.g., Kilmarie)
+ and is a distinctive feature in comparison to the broad peak at ~10 degrees
+ (~10 angstroms) typical of other clay minerals at Gale crater. Current work
+ by the CheMin instrument team favors interpretation of the sharper 11.14
+ degree peak as a mixed-layer serpentine/talc within the clay mineral
+ component. Other possible phases that might account for this peak include
+ jahnsite, aluminocoquimbite, rhomboclase, inesite, and willhendersonite;
+ however, modeling of the clay mineral component and consideration of
+ supporting Mars Science Laboratory chemical and evolved gas analyses at
+ Groken make the mixed-layer serpentine/talc a favored interpretation.
+ Future work may lead to modified or alternative interpretations."
+END_OBJECT                    = SPREADSHEET
+END
+

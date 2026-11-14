@@ -1,0 +1,8 @@
+{
+  "start": {"latitude": -4.5895, "longitude": 137.4417, "name": "Bradbury Landing Site"},
+  "target_ids": ["target_yellowknife"],
+  "destination": {"latitude": -4.6000, "longitude": 137.4200, "name": "RAD Radiation Monitoring Point Alpha"},
+  "constraints": {"walkingSpeedKmh": 2.0, "maxSlopeDegrees": 15, "maxEvaHours": 6,
+                  "reserveEvaHours": 1.0, "maxDistanceMeters": 10000, "scienceTimeMinPerStop": 20},
+  "options": {"metric": "time"}
+}

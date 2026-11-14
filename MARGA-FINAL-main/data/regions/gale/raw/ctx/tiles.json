@@ -1,0 +1,707 @@
+{
+ "tiles": {
+  "2149/7221": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2149/7221.png",
+   "file": "raw/ctx/tiles/12/2149/7221.png",
+   "bytes": 50973,
+   "sha256": "fd96035971e77ced9dd6540c85c701b79380b5da278656430900f5d29ae7ebdf",
+   "downloaded_at": "2026-11-12T16:45:57Z"
+  },
+  "2149/7219": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2149/7219.png",
+   "file": "raw/ctx/tiles/12/2149/7219.png",
+   "bytes": 53513,
+   "sha256": "130aff5bb31022ac93fc3cca2e3f5414c422106dbc35cabc03b61b2c47e4f69e",
+   "downloaded_at": "2026-11-12T16:45:57Z"
+  },
+  "2149/7218": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2149/7218.png",
+   "file": "raw/ctx/tiles/12/2149/7218.png",
+   "bytes": 51135,
+   "sha256": "f3aeb230287df68cc92ecbfa229381f3be09978d892931e6f2aefbc24fac7080",
+   "downloaded_at": "2026-11-12T16:45:57Z"
+  },
+  "2149/7223": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2149/7223.png",
+   "file": "raw/ctx/tiles/12/2149/7223.png",
+   "bytes": 50213,
+   "sha256": "86b88fa1755e7ebcdb6e174acabca0d74e2e2eb8770013f5680e1c52f44b7faa",
+   "downloaded_at": "2026-11-12T16:45:57Z"
+  },
+  "2149/7220": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2149/7220.png",
+   "file": "raw/ctx/tiles/12/2149/7220.png",
+   "bytes": 51830,
+   "sha256": "3a2c023d44b0e4e4c21ac21524c534d4dd5644eb8cb3e6716ef7269b79317430",
+   "downloaded_at": "2026-11-12T16:45:57Z"
+  },
+  "2149/7222": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2149/7222.png",
+   "file": "raw/ctx/tiles/12/2149/7222.png",
+   "bytes": 49230,
+   "sha256": "2cada2f302804788a882ad9356cdf37850112e403c1add269659f41001206133",
+   "downloaded_at": "2026-11-12T16:45:57Z"
+  },
+  "2149/7225": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2149/7225.png",
+   "file": "raw/ctx/tiles/12/2149/7225.png",
+   "bytes": 49193,
+   "sha256": "7b8db48880b35d4c7207623993c98dbe9c7c9108817299372a74fed0b5ee48bd",
+   "downloaded_at": "2026-11-12T16:45:58Z"
+  },
+  "2149/7227": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2149/7227.png",
+   "file": "raw/ctx/tiles/12/2149/7227.png",
+   "bytes": 47198,
+   "sha256": "f54d95fdd64f14a25d7240549d9c14d3ff4f26b67a2386a8d0f29f44935d6610",
+   "downloaded_at": "2026-11-12T16:45:58Z"
+  },
+  "2149/7224": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2149/7224.png",
+   "file": "raw/ctx/tiles/12/2149/7224.png",
+   "bytes": 49447,
+   "sha256": "3bc601ccaf265547ec3a38b8e2ca04a6dff957f2f6bf59b4141b2dfc0f44d87a",
+   "downloaded_at": "2026-11-12T16:45:58Z"
+  },
+  "2149/7226": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2149/7226.png",
+   "file": "raw/ctx/tiles/12/2149/7226.png",
+   "bytes": 48424,
+   "sha256": "ddf2bd3b2438ed70cc9ac307ccac15f9d4394683a69261078291bf84e1ec5ee6",
+   "downloaded_at": "2026-11-12T16:45:58Z"
+  },
+  "2150/7218": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2150/7218.png",
+   "file": "raw/ctx/tiles/12/2150/7218.png",
+   "bytes": 53467,
+   "sha256": "a6c1b820bf24601142819702883c730b613df2bf5bb36c69a834b015f8532e8d",
+   "downloaded_at": "2026-11-12T16:45:58Z"
+  },
+  "2150/7219": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2150/7219.png",
+   "file": "raw/ctx/tiles/12/2150/7219.png",
+   "bytes": 53280,
+   "sha256": "ed6473348ff9a6173f11cf376d31f06bf17393bcfd616d058cb0b8338afc5c5e",
+   "downloaded_at": "2026-11-12T16:45:58Z"
+  },
+  "2150/7220": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2150/7220.png",
+   "file": "raw/ctx/tiles/12/2150/7220.png",
+   "bytes": 49495,
+   "sha256": "6d9782c8643d53f5a1bf0119c07bee15f86898b4fdac5dec364b1f39f6df52a3",
+   "downloaded_at": "2026-11-12T16:45:59Z"
+  },
+  "2150/7221": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2150/7221.png",
+   "file": "raw/ctx/tiles/12/2150/7221.png",
+   "bytes": 48397,
+   "sha256": "ebf7ef58e8e2c169696cf281503221bde131a279388ac4e59e412f54b3186082",
+   "downloaded_at": "2026-11-12T16:45:59Z"
+  },
+  "2150/7223": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2150/7223.png",
+   "file": "raw/ctx/tiles/12/2150/7223.png",
+   "bytes": 48035,
+   "sha256": "254207242348831a6d9b9416904f59fa209d4640a6f1bc6192d2d47946897931",
+   "downloaded_at": "2026-11-12T16:45:59Z"
+  },
+  "2150/7222": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2150/7222.png",
+   "file": "raw/ctx/tiles/12/2150/7222.png",
+   "bytes": 47335,
+   "sha256": "19b5204407bee67a109bce89bec6de5502e3bab666ec46e5d2db361ce08c9ac2",
+   "downloaded_at": "2026-11-12T16:45:59Z"
+  },
+  "2150/7224": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2150/7224.png",
+   "file": "raw/ctx/tiles/12/2150/7224.png",
+   "bytes": 48139,
+   "sha256": "d2462ac60326022c85d1f419b0330c7d24414fefadbe713a4224e537479955ae",
+   "downloaded_at": "2026-11-12T16:46:00Z"
+  },
+  "2150/7225": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2150/7225.png",
+   "file": "raw/ctx/tiles/12/2150/7225.png",
+   "bytes": 46612,
+   "sha256": "65350360ad596b0f570c47e8d7b6f0f07bf664b315cdfa661af6968b7b6dab00",
+   "downloaded_at": "2026-11-12T16:46:00Z"
+  },
+  "2151/7218": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2151/7218.png",
+   "file": "raw/ctx/tiles/12/2151/7218.png",
+   "bytes": 51220,
+   "sha256": "16e07e99d8a12c450c005262b9973b97b2c6d4791f89bb87ee8c0b54d16a0a29",
+   "downloaded_at": "2026-11-12T16:46:01Z"
+  },
+  "2150/7227": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2150/7227.png",
+   "file": "raw/ctx/tiles/12/2150/7227.png",
+   "bytes": 50230,
+   "sha256": "e4adcb7a16007fa759f6a35381fe756605a39d6455bb231149a178d755436d65",
+   "downloaded_at": "2026-11-12T16:46:01Z"
+  },
+  "2150/7226": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2150/7226.png",
+   "file": "raw/ctx/tiles/12/2150/7226.png",
+   "bytes": 45825,
+   "sha256": "8bf5554f61a09b8c793b80cb014a96a298520a5f239d3c27ee9a938ad747db45",
+   "downloaded_at": "2026-11-12T16:46:01Z"
+  },
+  "2151/7220": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2151/7220.png",
+   "file": "raw/ctx/tiles/12/2151/7220.png",
+   "bytes": 50614,
+   "sha256": "a1f8677df5eea96147afa5f3eef2359d8e08d7f12d568c9601e6b3f9a4e0fcf4",
+   "downloaded_at": "2026-11-12T16:46:01Z"
+  },
+  "2151/7219": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2151/7219.png",
+   "file": "raw/ctx/tiles/12/2151/7219.png",
+   "bytes": 56548,
+   "sha256": "817b62c0d70bdb3a88ccce88d268cf977868988ca25ad5a19d7b45be3e3e2eab",
+   "downloaded_at": "2026-11-12T16:46:01Z"
+  },
+  "2151/7221": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2151/7221.png",
+   "file": "raw/ctx/tiles/12/2151/7221.png",
+   "bytes": 46934,
+   "sha256": "4dbf423c83671773a1affeaa51a0d93a1a83ce07f5ca4f81fdfad3e8960207c4",
+   "downloaded_at": "2026-11-12T16:46:01Z"
+  },
+  "2151/7224": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2151/7224.png",
+   "file": "raw/ctx/tiles/12/2151/7224.png",
+   "bytes": 46485,
+   "sha256": "4ed3cf812611d18cb00910f18a9f7102b3f88243e28495637747a35dfaa50239",
+   "downloaded_at": "2026-11-12T16:46:02Z"
+  },
+  "2151/7222": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2151/7222.png",
+   "file": "raw/ctx/tiles/12/2151/7222.png",
+   "bytes": 45714,
+   "sha256": "d54aa5458b738355ef21b51fc71274d68ed9e4ed9f2e6695989fc39276107817",
+   "downloaded_at": "2026-11-12T16:46:02Z"
+  },
+  "2151/7223": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2151/7223.png",
+   "file": "raw/ctx/tiles/12/2151/7223.png",
+   "bytes": 47496,
+   "sha256": "df48012ebe8ca9c1cccb50f97b60e67b263cfded3997d5a920c72dba597f6673",
+   "downloaded_at": "2026-11-12T16:46:02Z"
+  },
+  "2151/7225": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2151/7225.png",
+   "file": "raw/ctx/tiles/12/2151/7225.png",
+   "bytes": 42646,
+   "sha256": "3a8ab8a161eb6dbf7d5c5c91249efbd3deaf31de84e5c61679f927376612948c",
+   "downloaded_at": "2026-11-12T16:46:02Z"
+  },
+  "2151/7226": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2151/7226.png",
+   "file": "raw/ctx/tiles/12/2151/7226.png",
+   "bytes": 42915,
+   "sha256": "4d4a375b6c9dccc5221c7582ee24f7080bf6515f1cd95b3e94186624f39ee378",
+   "downloaded_at": "2026-11-12T16:46:02Z"
+  },
+  "2151/7227": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2151/7227.png",
+   "file": "raw/ctx/tiles/12/2151/7227.png",
+   "bytes": 52073,
+   "sha256": "33f3dfed09e61b3a82c1968340e66b59af4a79dc98ecb0235fdc6cc1bc2d3c2e",
+   "downloaded_at": "2026-11-12T16:46:02Z"
+  },
+  "2152/7218": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2152/7218.png",
+   "file": "raw/ctx/tiles/12/2152/7218.png",
+   "bytes": 50999,
+   "sha256": "bdcb422e94dc44d9184501236259bb1659422a04da2e80605b93f1889c195502",
+   "downloaded_at": "2026-11-12T16:46:03Z"
+  },
+  "2152/7220": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2152/7220.png",
+   "file": "raw/ctx/tiles/12/2152/7220.png",
+   "bytes": 49672,
+   "sha256": "69e5cc9ccb1a3ff522438c90db725852f0fbe0fdd9177bc36ffa8f260dad1ac8",
+   "downloaded_at": "2026-11-12T16:46:03Z"
+  },
+  "2152/7219": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2152/7219.png",
+   "file": "raw/ctx/tiles/12/2152/7219.png",
+   "bytes": 57371,
+   "sha256": "b2f7c205d71a1734009dd5cc0cee4ed836e1b6288b449b6b79644811c710f524",
+   "downloaded_at": "2026-11-12T16:46:03Z"
+  },
+  "2152/7223": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2152/7223.png",
+   "file": "raw/ctx/tiles/12/2152/7223.png",
+   "bytes": 44753,
+   "sha256": "9255b1f1f2ea07dd1403cdb535220f2d6a6a7376f238fa470509b63c32aaaf44",
+   "downloaded_at": "2026-11-12T16:46:03Z"
+  },
+  "2152/7222": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2152/7222.png",
+   "file": "raw/ctx/tiles/12/2152/7222.png",
+   "bytes": 44992,
+   "sha256": "268c05a0106bf732888fbe96db35075b25a8b941a75fa86d7106683834d3df38",
+   "downloaded_at": "2026-11-12T16:46:03Z"
+  },
+  "2152/7221": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2152/7221.png",
+   "file": "raw/ctx/tiles/12/2152/7221.png",
+   "bytes": 43614,
+   "sha256": "9cd593d3c02b1c52a5264c65370da24a9ad7453254863da113e4137a3a013aa4",
+   "downloaded_at": "2026-11-12T16:46:03Z"
+  },
+  "2152/7225": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2152/7225.png",
+   "file": "raw/ctx/tiles/12/2152/7225.png",
+   "bytes": 42607,
+   "sha256": "98f0c1c1687dfdbb58beb264bd0d52ee09a31a7301f31b0785c87fc20cad56fb",
+   "downloaded_at": "2026-11-12T16:46:04Z"
+  },
+  "2152/7226": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2152/7226.png",
+   "file": "raw/ctx/tiles/12/2152/7226.png",
+   "bytes": 46051,
+   "sha256": "5b38bf40ae5a701a62449ef608e7d309914cbbb24602131bc0216d53a6a99dee",
+   "downloaded_at": "2026-11-12T16:46:04Z"
+  },
+  "2152/7224": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2152/7224.png",
+   "file": "raw/ctx/tiles/12/2152/7224.png",
+   "bytes": 42883,
+   "sha256": "547056ecb73eef5d7b9930d60782099799ef33115b851ebae7f26ecfff781e96",
+   "downloaded_at": "2026-11-12T16:46:04Z"
+  },
+  "2152/7227": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2152/7227.png",
+   "file": "raw/ctx/tiles/12/2152/7227.png",
+   "bytes": 50114,
+   "sha256": "5824a436e04fcf4c584f99dbc6ea598e69af886029acb488a4d05bd4246bb041",
+   "downloaded_at": "2026-11-12T16:46:04Z"
+  },
+  "2153/7219": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2153/7219.png",
+   "file": "raw/ctx/tiles/12/2153/7219.png",
+   "bytes": 52679,
+   "sha256": "3ea5dd74843658c1b8cc8af0deb1731efe87f89a26fe17522160af9a8ae0dc48",
+   "downloaded_at": "2026-11-12T16:46:04Z"
+  },
+  "2153/7218": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2153/7218.png",
+   "file": "raw/ctx/tiles/12/2153/7218.png",
+   "bytes": 51721,
+   "sha256": "759c6eb92c438d3ff9a0794607fb467208314faf514e892cf3ce5bb6021b4f3b",
+   "downloaded_at": "2026-11-12T16:46:04Z"
+  },
+  "2153/7221": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2153/7221.png",
+   "file": "raw/ctx/tiles/12/2153/7221.png",
+   "bytes": 42746,
+   "sha256": "480e6396be1c771ac62c254b8e45a8bf84470cd247356c6cdf22684676a365cc",
+   "downloaded_at": "2026-11-12T16:46:05Z"
+  },
+  "2153/7222": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2153/7222.png",
+   "file": "raw/ctx/tiles/12/2153/7222.png",
+   "bytes": 43874,
+   "sha256": "d937b542aab371b40c31338f92b76903bcc46ff4010dd03fc3cac73302b02561",
+   "downloaded_at": "2026-11-12T16:46:05Z"
+  },
+  "2153/7220": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2153/7220.png",
+   "file": "raw/ctx/tiles/12/2153/7220.png",
+   "bytes": 48145,
+   "sha256": "c653f94ca5db9992521711bdfda520d673481b2404334669309dae2319f9487e",
+   "downloaded_at": "2026-11-12T16:46:05Z"
+  },
+  "2153/7223": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2153/7223.png",
+   "file": "raw/ctx/tiles/12/2153/7223.png",
+   "bytes": 44400,
+   "sha256": "ce78f64ce780e962c5cb6113599ba6dd30bb8d5427b1cc7b81b1c2b81d9fbfcd",
+   "downloaded_at": "2026-11-12T16:46:05Z"
+  },
+  "2153/7224": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2153/7224.png",
+   "file": "raw/ctx/tiles/12/2153/7224.png",
+   "bytes": 44031,
+   "sha256": "e76730cc50d89924e1185cc2e19a704ac6c67aae9b41fe0af923a9f92025c1c6",
+   "downloaded_at": "2026-11-12T16:46:05Z"
+  },
+  "2153/7225": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2153/7225.png",
+   "file": "raw/ctx/tiles/12/2153/7225.png",
+   "bytes": 47085,
+   "sha256": "ae5ce1359ce296116b0a6951ac97eccb899ea4c3bc2b3bbe50540f6b82bd81d8",
+   "downloaded_at": "2026-11-12T16:46:05Z"
+  },
+  "2153/7227": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2153/7227.png",
+   "file": "raw/ctx/tiles/12/2153/7227.png",
+   "bytes": 48200,
+   "sha256": "083c089798fc5479ac1e758b738b69afda348fced6f3db5895017296edb8bce1",
+   "downloaded_at": "2026-11-12T16:46:06Z"
+  },
+  "2154/7219": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2154/7219.png",
+   "file": "raw/ctx/tiles/12/2154/7219.png",
+   "bytes": 51222,
+   "sha256": "08c3d329b2cbbf1ce7758a12a3cfddcd42075fe7c7ab9396c281acebfec5f1d3",
+   "downloaded_at": "2026-11-12T16:46:06Z"
+  },
+  "2154/7218": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2154/7218.png",
+   "file": "raw/ctx/tiles/12/2154/7218.png",
+   "bytes": 50704,
+   "sha256": "8dff6cadb219768f57c84421fbcfb6bf5477a2f87e06515370038fc3f47fd16a",
+   "downloaded_at": "2026-11-12T16:46:06Z"
+  },
+  "2153/7226": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2153/7226.png",
+   "file": "raw/ctx/tiles/12/2153/7226.png",
+   "bytes": 47293,
+   "sha256": "d950faff0b8dc32cbf2e4874bdb0ea6b2dc3e5a960878babdde773f4c6eab12e",
+   "downloaded_at": "2026-11-12T16:46:06Z"
+  },
+  "2154/7221": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2154/7221.png",
+   "file": "raw/ctx/tiles/12/2154/7221.png",
+   "bytes": 46742,
+   "sha256": "4669d4468b0fe531c89f1f93d9c87a81b608eaacb55fff26c89785bc86b9ba70",
+   "downloaded_at": "2026-11-12T16:46:07Z"
+  },
+  "2154/7220": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2154/7220.png",
+   "file": "raw/ctx/tiles/12/2154/7220.png",
+   "bytes": 49723,
+   "sha256": "cf9ebf131c0c6d84291ba67cd1ec61a84371bc274157e5e1590eb720588e5039",
+   "downloaded_at": "2026-11-12T16:46:07Z"
+  },
+  "2154/7223": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2154/7223.png",
+   "file": "raw/ctx/tiles/12/2154/7223.png",
+   "bytes": 46850,
+   "sha256": "57124f9e0430425ea0495c3a33ccf998ffc8bf016ab53c2733c64c710e551908",
+   "downloaded_at": "2026-11-12T16:46:07Z"
+  },
+  "2154/7225": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2154/7225.png",
+   "file": "raw/ctx/tiles/12/2154/7225.png",
+   "bytes": 45389,
+   "sha256": "336997bd8236911ddb83f0daa5102e4316b5ea357c5a687ea79ae7b2772feffb",
+   "downloaded_at": "2026-11-12T16:46:08Z"
+  },
+  "2154/7224": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2154/7224.png",
+   "file": "raw/ctx/tiles/12/2154/7224.png",
+   "bytes": 47062,
+   "sha256": "2cf890f1589ca5592c4c27ba42069c94497fc3321ca11894b44403a21e9fb789",
+   "downloaded_at": "2026-11-12T16:46:08Z"
+  },
+  "2154/7222": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2154/7222.png",
+   "file": "raw/ctx/tiles/12/2154/7222.png",
+   "bytes": 49033,
+   "sha256": "39c7866ed5b155744a66542cb11495612dd20f112a4fcf4715a475e618cc4c77",
+   "downloaded_at": "2026-11-12T16:46:08Z"
+  },
+  "2154/7227": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2154/7227.png",
+   "file": "raw/ctx/tiles/12/2154/7227.png",
+   "bytes": 43290,
+   "sha256": "11bdc4c74b6eb3c00090ed3a28c19ea347ad657f0d92984813572af064cba859",
+   "downloaded_at": "2026-11-12T16:46:08Z"
+  },
+  "2154/7226": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2154/7226.png",
+   "file": "raw/ctx/tiles/12/2154/7226.png",
+   "bytes": 43392,
+   "sha256": "bf4eb660a0a181b3481f7e7ac9cdee271520790c98b0ec69532c3694e357ddac",
+   "downloaded_at": "2026-11-12T16:46:08Z"
+  },
+  "2155/7218": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2155/7218.png",
+   "file": "raw/ctx/tiles/12/2155/7218.png",
+   "bytes": 45430,
+   "sha256": "c44916fe13745eb7f92b6f12af57aa26817895a6a848f2eb17ac9bcea72493f8",
+   "downloaded_at": "2026-11-12T16:46:09Z"
+  },
+  "2155/7219": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2155/7219.png",
+   "file": "raw/ctx/tiles/12/2155/7219.png",
+   "bytes": 48828,
+   "sha256": "9f3ee2e26de0cb0c63389947128d4488fcd519d02af24253214d40ffbf019cc0",
+   "downloaded_at": "2026-11-12T16:46:09Z"
+  },
+  "2155/7221": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2155/7221.png",
+   "file": "raw/ctx/tiles/12/2155/7221.png",
+   "bytes": 46944,
+   "sha256": "e0b19f417f35e96e5be1a68dc8b320089737f0e891a794fbc20e1c557d8f82a4",
+   "downloaded_at": "2026-11-12T16:46:09Z"
+  },
+  "2155/7220": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2155/7220.png",
+   "file": "raw/ctx/tiles/12/2155/7220.png",
+   "bytes": 51376,
+   "sha256": "90ec7aae2a91423a2a940c290835bf5844248ed51a40799140196f6071376a5b",
+   "downloaded_at": "2026-11-12T16:46:09Z"
+  },
+  "2155/7223": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2155/7223.png",
+   "file": "raw/ctx/tiles/12/2155/7223.png",
+   "bytes": 46733,
+   "sha256": "eaedc77d912ddf582d9b97a497279980de85cc84c641edd107bbc13c5837e435",
+   "downloaded_at": "2026-11-12T16:46:09Z"
+  },
+  "2155/7222": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2155/7222.png",
+   "file": "raw/ctx/tiles/12/2155/7222.png",
+   "bytes": 47090,
+   "sha256": "ad5fa14ac42729f3667e2c86613e0643f185391fe2f967512ddb51f44f622f61",
+   "downloaded_at": "2026-11-12T16:46:09Z"
+  },
+  "2155/7224": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2155/7224.png",
+   "file": "raw/ctx/tiles/12/2155/7224.png",
+   "bytes": 45507,
+   "sha256": "7c02cc2a0c31ddabbb9ae7a472ab70a203ea9df895bd722e53df084314f7557c",
+   "downloaded_at": "2026-11-12T16:46:10Z"
+  },
+  "2155/7226": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2155/7226.png",
+   "file": "raw/ctx/tiles/12/2155/7226.png",
+   "bytes": 44830,
+   "sha256": "18a2eda2ac9811993ba859d34ddf5a6fc3c2091cc091b9c8c8bacc03e1fdc401",
+   "downloaded_at": "2026-11-12T16:46:10Z"
+  },
+  "2155/7227": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2155/7227.png",
+   "file": "raw/ctx/tiles/12/2155/7227.png",
+   "bytes": 45956,
+   "sha256": "112356093ac81dff1e7b62bdb6d51604a0ade2ac20bfb105108c437836cf5a0c",
+   "downloaded_at": "2026-11-12T16:46:10Z"
+  },
+  "2155/7225": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2155/7225.png",
+   "file": "raw/ctx/tiles/12/2155/7225.png",
+   "bytes": 41306,
+   "sha256": "348feac832348d6241475a1562d706fdd2e2e99d65bea31000bd3da5f35f8d72",
+   "downloaded_at": "2026-11-12T16:46:10Z"
+  },
+  "2156/7219": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2156/7219.png",
+   "file": "raw/ctx/tiles/12/2156/7219.png",
+   "bytes": 50556,
+   "sha256": "9d2c7ccb8ebaba2c75da4f30b8d98bb1330a7383148c01a2d86ba6902e1ea73e",
+   "downloaded_at": "2026-11-12T16:46:10Z"
+  },
+  "2156/7218": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2156/7218.png",
+   "file": "raw/ctx/tiles/12/2156/7218.png",
+   "bytes": 46024,
+   "sha256": "a8da56bd7753927677a88021097dd830cf2c86b6d7018ff3285794c69684708e",
+   "downloaded_at": "2026-11-12T16:46:10Z"
+  },
+  "2156/7220": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2156/7220.png",
+   "file": "raw/ctx/tiles/12/2156/7220.png",
+   "bytes": 53390,
+   "sha256": "b63bab33d8e8a1c41e2bd0a54b5459142e245888a1774974a82bf8fdad01682e",
+   "downloaded_at": "2026-11-12T16:46:11Z"
+  },
+  "2156/7221": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2156/7221.png",
+   "file": "raw/ctx/tiles/12/2156/7221.png",
+   "bytes": 48439,
+   "sha256": "af1ed5c18d2a35304b42bab01ddf8e1628ecd6a0f22576810b86acaa24f975f0",
+   "downloaded_at": "2026-11-12T16:46:11Z"
+  },
+  "2156/7223": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2156/7223.png",
+   "file": "raw/ctx/tiles/12/2156/7223.png",
+   "bytes": 46012,
+   "sha256": "998fdf2b853ea6a0c4e0174a47b60d8337fb5dbd5d66b9e01698f36c60f7549d",
+   "downloaded_at": "2026-11-12T16:46:11Z"
+  },
+  "2156/7222": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2156/7222.png",
+   "file": "raw/ctx/tiles/12/2156/7222.png",
+   "bytes": 47988,
+   "sha256": "daff899e44cf844727af3ea88251b5d83e1c013923ec7add0b541da2e1e86a38",
+   "downloaded_at": "2026-11-12T16:46:11Z"
+  },
+  "2156/7224": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2156/7224.png",
+   "file": "raw/ctx/tiles/12/2156/7224.png",
+   "bytes": 45852,
+   "sha256": "f3235687b3df5971384cd49de689c47928f95e83ac3d0080f88d501732c5a82c",
+   "downloaded_at": "2026-11-12T16:46:11Z"
+  },
+  "2156/7225": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2156/7225.png",
+   "file": "raw/ctx/tiles/12/2156/7225.png",
+   "bytes": 48821,
+   "sha256": "a5317875cf79f61ed7f17e93f3d90bd560cd440a86378e8fc88eedaabd4cc764",
+   "downloaded_at": "2026-11-12T16:46:11Z"
+  },
+  "2156/7226": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2156/7226.png",
+   "file": "raw/ctx/tiles/12/2156/7226.png",
+   "bytes": 53347,
+   "sha256": "d34b2556540590cf04bb2bcc5a2c9f49262365971e3fbaf2967e432837f1962c",
+   "downloaded_at": "2026-11-12T16:46:12Z"
+  },
+  "2157/7218": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2157/7218.png",
+   "file": "raw/ctx/tiles/12/2157/7218.png",
+   "bytes": 44227,
+   "sha256": "45dce5ed007a6b559cc980f0d404ce8e03b0f778f197393ee543338e5169c20d",
+   "downloaded_at": "2026-11-12T16:46:12Z"
+  },
+  "2156/7227": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2156/7227.png",
+   "file": "raw/ctx/tiles/12/2156/7227.png",
+   "bytes": 52725,
+   "sha256": "13e45b064489c3303380d80a73917c77aed935532cecb8b65137493adc47d516",
+   "downloaded_at": "2026-11-12T16:46:12Z"
+  },
+  "2157/7220": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2157/7220.png",
+   "file": "raw/ctx/tiles/12/2157/7220.png",
+   "bytes": 56715,
+   "sha256": "2b0274e0564f21b66e289c0a38e7d822545447373d0397b09b2b1d4ba3a95e19",
+   "downloaded_at": "2026-11-12T16:46:12Z"
+  },
+  "2157/7219": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2157/7219.png",
+   "file": "raw/ctx/tiles/12/2157/7219.png",
+   "bytes": 54298,
+   "sha256": "67e13a136bd6471f9c04bbf9f73c9c3b40dbec271b9dfb4f67446137e3275939",
+   "downloaded_at": "2026-11-12T16:46:12Z"
+  },
+  "2157/7221": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2157/7221.png",
+   "file": "raw/ctx/tiles/12/2157/7221.png",
+   "bytes": 47969,
+   "sha256": "004130c025492941e4793eea4b966d35eaa4a0028aa8b5151a6f06e8c0bf09b3",
+   "downloaded_at": "2026-11-12T16:46:12Z"
+  },
+  "2157/7224": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2157/7224.png",
+   "file": "raw/ctx/tiles/12/2157/7224.png",
+   "bytes": 54490,
+   "sha256": "2637824d80b9aa3af5f8a16a6b6f6e357c54b854ba18d0871bbf00e04c62bd28",
+   "downloaded_at": "2026-11-12T16:46:13Z"
+  },
+  "2157/7222": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2157/7222.png",
+   "file": "raw/ctx/tiles/12/2157/7222.png",
+   "bytes": 45880,
+   "sha256": "8ab0908b09ae9a0850d904fdba813874d6fb3199fe67fb81b4dc45ab692081b4",
+   "downloaded_at": "2026-11-12T16:46:13Z"
+  },
+  "2157/7223": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2157/7223.png",
+   "file": "raw/ctx/tiles/12/2157/7223.png",
+   "bytes": 48357,
+   "sha256": "88c48ed5c6a71844112ea7841183fb9e9969e67313fa00046260be1ff063ee18",
+   "downloaded_at": "2026-11-12T16:46:13Z"
+  },
+  "2157/7226": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2157/7226.png",
+   "file": "raw/ctx/tiles/12/2157/7226.png",
+   "bytes": 55307,
+   "sha256": "f39c237acee9e452aebadcd000fcaebbd650742d8abbb2b33c9d5c5fc9fd82a8",
+   "downloaded_at": "2026-11-12T16:46:13Z"
+  },
+  "2157/7225": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2157/7225.png",
+   "file": "raw/ctx/tiles/12/2157/7225.png",
+   "bytes": 57197,
+   "sha256": "f1d27d42423e43d67789ccee9cf7b94aad3db62c4e507a922e0ee960dc7a2884",
+   "downloaded_at": "2026-11-12T16:46:14Z"
+  },
+  "2157/7227": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2157/7227.png",
+   "file": "raw/ctx/tiles/12/2157/7227.png",
+   "bytes": 47447,
+   "sha256": "650338d2621da1b057bd8f2e3298956b2a74f63aafa9592035d7cda1b5b89b41",
+   "downloaded_at": "2026-11-12T16:46:14Z"
+  },
+  "2158/7218": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2158/7218.png",
+   "file": "raw/ctx/tiles/12/2158/7218.png",
+   "bytes": 53191,
+   "sha256": "c35ed90a3edea1d5d4fc599bae640974900a1355123abbb9a232a11fe484df82",
+   "downloaded_at": "2026-11-12T16:46:14Z"
+  },
+  "2158/7219": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2158/7219.png",
+   "file": "raw/ctx/tiles/12/2158/7219.png",
+   "bytes": 55500,
+   "sha256": "7744ba89a9f9ba4e90de32580e119f1dad77e13d2d57be9caa42483f8098b232",
+   "downloaded_at": "2026-11-12T16:46:14Z"
+  },
+  "2158/7220": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2158/7220.png",
+   "file": "raw/ctx/tiles/12/2158/7220.png",
+   "bytes": 56735,
+   "sha256": "9013d3fad50337bde39aef9f9b7ced837b0c4536bfc230c492f9c3947a0b7c75",
+   "downloaded_at": "2026-11-12T16:46:15Z"
+  },
+  "2158/7221": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2158/7221.png",
+   "file": "raw/ctx/tiles/12/2158/7221.png",
+   "bytes": 47469,
+   "sha256": "181609945ca48eceadfaf3858cc2ed1969ed085176dc31dd8428e87aa07674f4",
+   "downloaded_at": "2026-11-12T16:46:15Z"
+  },
+  "2158/7222": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2158/7222.png",
+   "file": "raw/ctx/tiles/12/2158/7222.png",
+   "bytes": 50038,
+   "sha256": "22aa940b8e73471d814657afda8816003502846f31bab3f970ccaae4c74d9e00",
+   "downloaded_at": "2026-11-12T16:46:15Z"
+  },
+  "2158/7223": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2158/7223.png",
+   "file": "raw/ctx/tiles/12/2158/7223.png",
+   "bytes": 56530,
+   "sha256": "a77b2aae052f071d74623bf65c16ccb5b66c8932bb8194c078f7418a072b147a",
+   "downloaded_at": "2026-11-12T16:46:15Z"
+  },
+  "2158/7224": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2158/7224.png",
+   "file": "raw/ctx/tiles/12/2158/7224.png",
+   "bytes": 57696,
+   "sha256": "425212a81933dea0346074ece5ae20c84b5f608b87d6f9966cb7c25aa6fb8636",
+   "downloaded_at": "2026-11-12T16:46:16Z"
+  },
+  "2158/7225": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2158/7225.png",
+   "file": "raw/ctx/tiles/12/2158/7225.png",
+   "bytes": 56896,
+   "sha256": "c7605857cecc22a89b040082111eb30da232c7cd82bf6cc142e54c7845160754",
+   "downloaded_at": "2026-11-12T16:46:16Z"
+  },
+  "2158/7226": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2158/7226.png",
+   "file": "raw/ctx/tiles/12/2158/7226.png",
+   "bytes": 52427,
+   "sha256": "a62e39fa0483f9908566a2dc6168e8ba235cca47080ec337cb02e99d3e4b9715",
+   "downloaded_at": "2026-11-12T16:46:16Z"
+  },
+  "2158/7227": {
+   "url": "https://trek.nasa.gov/tiles/Mars/EQ/Gale_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/2158/7227.png",
+   "file": "raw/ctx/tiles/12/2158/7227.png",
+   "bytes": 45636,
+   "sha256": "3d7250a8ced3eba8a82793c48dc886866f6fff43ab6bc02dfb69b8d535adae2c",
+   "downloaded_at": "2026-11-12T16:46:16Z"
+  }
+ },
+ "missing": [],
+ "requested": 100,
+ "completed_at": "2026-11-12T16:46:16Z"
+}

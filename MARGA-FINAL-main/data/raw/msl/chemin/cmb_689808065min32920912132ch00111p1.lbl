@@ -1,0 +1,60 @@
+PDS_VERSION_ID                = PDS3
+RECORD_TYPE                   = STREAM
+RECORD_BYTES                  = 132
+FILE_RECORDS                  = 7
+^HEADER                     = ("CMB_689808065MIN32920912132CH00111P1.CSV",1)
+^SPREADSHEET                = ("CMB_689808065MIN32920912132CH00111P1.CSV",2)
+DATA_SET_ID                   = "MSL-M-CHEMIN-5-RDR-V1.0"
+PRODUCT_ID                    = "CMB_689808065MIN32920912132CH00111P1"
+PRODUCT_VERSION_ID            = "V1.0"
+RELEASE_ID                    = "0030"
+SOURCE_PRODUCT_ID             = "CMB_689808065RDA32920912132CH00111P1"
+PRODUCT_TYPE                  = "CHEMIN_MIN"
+INSTRUMENT_HOST_ID            = "MSL"
+INSTRUMENT_HOST_NAME          = "MARS SCIENCE LABORATORY"
+INSTRUMENT_ID                 = "CHEMIN"
+TARGET_NAME                   = "MARS"
+MSL:CALIBRATION_STANDARD_NAME = "N/A"
+MISSION_PHASE_NAME            = "PRIMARY SURFACE MISSION"
+PRODUCT_CREATION_TIME         = 2022-06-01T15:47:30 
+START_TIME                    = 2021-11-10T10:09:13.576
+STOP_TIME                     = "UNK"
+SPACECRAFT_CLOCK_START_COUNT  = "689808065.242"
+SPACECRAFT_CLOCK_STOP_COUNT   = "UNK"
+OBJECT                        = HEADER
+ BYTES                        = 23
+ HEADER_TYPE                  = TEXT
+ DESCRIPTION                  = "This header record contains column headings
+ for the following table." 
+END_OBJECT                    = HEADER
+
+OBJECT                        = SPREADSHEET
+ ROWS                         = 6
+ ROW_BYTES                    = 109
+ FIELDS                       = 3
+ FIELD_DELIMITER              = "COMMA"
+ ^STRUCTURE                   = "CHEMIN_MIN.FMT"
+DESCRIPTION                   = "This table contains mineral abundances and
+ analytical errors derived from diffraction-all K-alpha diffraction data for
+ the Zechstein drill sample, analyzed in CheMin cell number 1a (Kapton
+ window). The analysis is based on RDA file
+ CMB_689808065RDA32920912132CH00111P1. That RDA file includes one night of
+ analysis, with files produced on sol 3292. Warm temperatures inside CheMin
+ (up to ~30 degrees centigrade, with correspondingly low relative humidity)
+ cause conversion of gypsum to bassanite over time. This conversion is not
+ significant until after the first night in CheMin (Vaniman et al., 2018,
+ American Mineralogist 103, 1011-1020), so the first night of analysis
+ represents the in-situ abundances of gypsum and bassanite. At Zechstein the
+ drill appears to have penetrated a Ca-sulfate vein at depth, accounting for
+ the exceptionally high abundance of gypsum. Mineral identifications,
+ abundances and analytical errors for crystalline phases were determined
+ using the program JADE. No clay minerals were detected in Zechstein. In
+ addition to the crystalline phases, high intensity in the low 2-theta
+ region and a broad amorphous hump were modeled using FULLPAT to indicate
+ that ~46 +/- 25 weight% of the total sample consists of X-ray amorphous
+ material. Column 1 of the table lists mineral identifications, column 2
+ lists the mineral abundances in weight percent, and column 3 indicates the
+ estimated errors. All errors reported are 2-sigma."
+END_OBJECT                    = SPREADSHEET
+END
+

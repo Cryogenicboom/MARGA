@@ -1,0 +1,54 @@
+PDS_VERSION_ID                = PDS3
+RECORD_TYPE                   = STREAM
+RECORD_BYTES                  = 167
+FILE_RECORDS                  = 9
+^HEADER                     = ("CMB_816588834MIN47201200082CH00113P1.CSV",1)
+^SPREADSHEET                = ("CMB_816588834MIN47201200082CH00113P1.CSV",2)
+DATA_SET_ID                   = "MSL-M-CHEMIN-5-RDR-V1.0"
+PRODUCT_ID                    = "CMB_816588834MIN47201200082CH00113P1"
+PRODUCT_VERSION_ID            = "V1.0"
+RELEASE_ID                    = "0042"
+SOURCE_PRODUCT_ID             = "CMB_816588834RDA47201200082CH00113P1"
+PRODUCT_TYPE                  = "CHEMIN_MIN"
+INSTRUMENT_HOST_ID            = "MSL"
+INSTRUMENT_HOST_NAME          = "MARS SCIENCE LABORATORY"
+INSTRUMENT_ID                 = "CHEMIN"
+TARGET_NAME                   = "MARS"
+MSL:CALIBRATION_STANDARD_NAME = "N/A"
+MISSION_PHASE_NAME            = "PRIMARY SURFACE MISSION"
+PRODUCT_CREATION_TIME         = 2026-06-19T19:50:15 
+START_TIME                    = 2025-11-16T19:21:55.623
+STOP_TIME                     = "UNK"
+SPACECRAFT_CLOCK_START_COUNT  = "816588834.240"
+SPACECRAFT_CLOCK_STOP_COUNT   = "UNK"
+OBJECT                        = HEADER
+ BYTES                        = 23
+ HEADER_TYPE                  = TEXT
+ DESCRIPTION                  = "This header record contains column headings
+ for the following table." 
+END_OBJECT                    = HEADER
+
+OBJECT                        = SPREADSHEET
+ ROWS                         = 8
+ ROW_BYTES                    = 144
+ FIELDS                       = 3
+ FIELD_DELIMITER              = "COMMA"
+ ^STRUCTURE                   = "CHEMIN_MIN.FMT"
+DESCRIPTION                   = "This table contains mineral abundances and
+ analytical errors derived from diffraction-all K-alpha diffraction data for
+ the Nevado Sajama sample, analyzed in CheMin cell number 11a (Mylar
+ window). The analysis is based on RDA file
+ CMB_816588834RDA47201200082CH00113P1. Mineral identifications, abundances
+ and analytical errors for crystalline phases, other than clay minerals,
+ were determined using the program JADE. In addition to these crystalline
+ phases, the program FULLPAT was used to estimate the abundance of poorly
+ crystalline clay minerals at ~10 +/- 5 weight% of the total sample. High
+ intensity in the low 2-theta region and a broad amorphous hump were modeled
+ using FULLPAT to indicate that ~53 +/- 24 weight% of the total sample
+ consists of X-ray amorphous materials. All errors cited are 2-sigma. Column
+ 1 of the table lists mineral identifications, column 2 lists the mineral
+ abundances in weight percent, and column 3 indicates the estimated
+ analytical errors."
+END_OBJECT                    = SPREADSHEET
+END
+

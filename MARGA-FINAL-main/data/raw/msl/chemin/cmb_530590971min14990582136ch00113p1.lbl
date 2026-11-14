@@ -1,0 +1,65 @@
+PDS_VERSION_ID                = PDS3
+RECORD_TYPE                   = STREAM
+RECORD_BYTES                  = 203
+FILE_RECORDS                  = 11
+^HEADER                     = ("CMB_530590971MIN14990582136CH00113P1.CSV",1)
+^SPREADSHEET                = ("CMB_530590971MIN14990582136CH00113P1.CSV",2)
+DATA_SET_ID                   = "MSL-M-CHEMIN-5-RDR-V1.0"
+PRODUCT_ID                    = "CMB_530590971MIN14990582136CH00113P1"
+PRODUCT_VERSION_ID            = "V1.0"
+RELEASE_ID                    = "0014"
+SOURCE_PRODUCT_ID             = "CMB_530590971RDA14990582136CH00113P1"
+PRODUCT_TYPE                  = "CHEMIN_MIN"
+INSTRUMENT_HOST_ID            = "MSL"
+INSTRUMENT_HOST_NAME          = "MARS SCIENCE LABORATORY"
+INSTRUMENT_ID                 = "CHEMIN"
+TARGET_NAME                   = "MARS"
+MSL:CALIBRATION_STANDARD_NAME = "N/A"
+MISSION_PHASE_NAME            = "PRIMARY SURFACE MISSION"
+PRODUCT_CREATION_TIME         = 2017-02-15T01:13:15 
+START_TIME                    = 2016-10-24T14:45:52.843
+STOP_TIME                     = "UNK"
+SPACECRAFT_CLOCK_START_COUNT  = "530590971.293"
+SPACECRAFT_CLOCK_STOP_COUNT   = "UNK"
+OBJECT                        = HEADER
+ BYTES                        = 23
+ HEADER_TYPE                  = TEXT
+ DESCRIPTION                  = "This header record contains column headings
+ for the following table." 
+END_OBJECT                    = HEADER
+
+OBJECT                        = SPREADSHEET
+ ROWS                         = 10
+ ROW_BYTES                    = 180
+ FIELDS                       = 3
+ FIELD_DELIMITER              = "COMMA"
+ ^STRUCTURE                   = "CHEMIN_MIN.FMT"
+ DESCRIPTION                  = "This table contains mineral abundances and
+ analytical errors derived from diffraction-all K-alpha diffraction data for
+ the Sebina drill sample, analyzed in CheMin cell number 4b (Kapton window).
+ The analysis is based on RDA file CMB_530590971RDA14990582136CH00113P1. That
+ RDA file is from the first night of analysis, sol 1496-1497. Additional
+ analyses of Sebina were obtained on subsequent nights, but warm temperatures
+ inside CheMin (up to ~30 degrees centigrade, with correspondingly low
+ relative humidity) caused conversion of gypsum to bassanite over time.
+ Therefore these later analyses do not represent in situ mineralogy and are
+ not used to determine the RDA diffraction pattern and MIN composition of the
+ in situ sample. For comparison, the full RDA file for all four nights of
+ analysis, which is not used to prepare a MIN file, is
+ CMB_530590971RDA14990582136CH00113P2. Mineral identifications, abundances
+ and analytical errors for crystalline phases, other than clay minerals, were
+ determined using the program JADE. Orthorhombic and monoclinic pyroxenes
+ both appear to be present, with orthopyroxene predominant, but exact
+ identification of individual pyroxenes is hampered by small abundances and
+ only the percentage of total pyroxene is reported. In addition to the
+ crystalline phases, the abundance of clay minerals was modeled using the
+ program FULLPAT at ~19 +/- 10 weight% of the total sample. A broad rise in
+ background is present and has been modeled using FULLPAT to indicate that
+ ~51 +/- 25 weight% of the total sample consists of X-ray amorphous material.
+ Column 1 of the table lists mineral identifications, column 2 lists the
+ mineral abundances in weight percent. Errors shown in column 3 are 1-sigma
+ and include the combined instrumental error plus analytical error estimated
+ from seven separate JADE analyses by members of the CheMin team."
+END_OBJECT                    = SPREADSHEET
+END
+

@@ -1,0 +1,58 @@
+PDS_VERSION_ID                = PDS3
+RECORD_TYPE                   = STREAM
+RECORD_BYTES                  = 223
+FILE_RECORDS                  = 12
+^HEADER                     = ("CMB_587626717MIN21420721316CH00111P1.CSV",1)
+^SPREADSHEET                = ("CMB_587626717MIN21420721316CH00111P1.CSV",2)
+DATA_SET_ID                   = "MSL-M-CHEMIN-5-RDR-V1.0"
+PRODUCT_ID                    = "CMB_587626717MIN21420721316CH00111P1"
+PRODUCT_VERSION_ID            = "V1.0"
+RELEASE_ID                    = "0020"
+SOURCE_PRODUCT_ID             = "CMB_587626717RDA21420721316CH00111P1"
+PRODUCT_TYPE                  = "CHEMIN_MIN"
+INSTRUMENT_HOST_ID            = "MSL"
+INSTRUMENT_HOST_NAME          = "MARS SCIENCE LABORATORY"
+INSTRUMENT_ID                 = "CHEMIN"
+TARGET_NAME                   = "MARS"
+MSL:CALIBRATION_STANDARD_NAME = "N/A"
+MISSION_PHASE_NAME            = "PRIMARY SURFACE MISSION"
+PRODUCT_CREATION_TIME         = 2019-02-01T17:20:30 
+START_TIME                    = 2018-08-15T18:10:36.526
+STOP_TIME                     = "UNK"
+SPACECRAFT_CLOCK_START_COUNT  = "587626717.541"
+SPACECRAFT_CLOCK_STOP_COUNT   = "UNK"
+OBJECT                        = HEADER
+ BYTES                        = 23
+ HEADER_TYPE                  = TEXT
+ DESCRIPTION                  = "This header record contains column headings
+ for the following table." 
+END_OBJECT                    = HEADER
+
+OBJECT                        = SPREADSHEET
+ ROWS                         = 11
+ ROW_BYTES                    = 200
+ FIELDS                       = 3
+ FIELD_DELIMITER              = "COMMA"
+ ^STRUCTURE                   = "CHEMIN_MIN.FMT"
+DESCRIPTION                   = "This table contains mineral abundances and
+ analytical errors derived from diffraction-all K-alpha diffraction data for
+ the Stoer drill sample, analyzed in CheMin cell number 10a (Mylar window).
+ The analysis is based on RDA file CMB_587626717RDA21420721316CH00111P1.
+ That RDA file combines three nights of analysis, with EDA files
+ produced on sols 2142, 2149, and 2155. Warm temperatures inside CheMin (up
+ to ~30 degrees centigrade, with correspondingly low relative humidity)
+ caused conversion of gypsum to bassanite over time. The data show that
+ gypsum began to transform to bassanite after sol 2142, so the ratio of
+ gypsum to bassanite in the total analysis was adjusted to match that on sol
+ 2142. Mineral identifications, abundances and analytical errors for
+ crystalline phases, other than clay minerals, were determined using the
+ program JADE. The program FULLPAT was used to estimate clay mineral
+ abundance at ~10 +/- 5 weight%. A broad rise in background is present and
+ has been modeled using FULLPAT to indicate that ~35 +/- 15 weight% of the
+ total sample consists of X-ray amorphous material. Column 1 of the table
+ lists mineral identifications, column 2 lists the mineral abundances in
+ weight percent, and column 3 indicates the estimated 2-sigma analytical
+ errors."
+END_OBJECT                    = SPREADSHEET
+END
+

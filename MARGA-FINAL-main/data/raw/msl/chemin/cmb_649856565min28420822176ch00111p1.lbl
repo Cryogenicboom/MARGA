@@ -1,0 +1,54 @@
+PDS_VERSION_ID                = PDS3
+RECORD_TYPE                   = STREAM
+RECORD_BYTES                  = 157
+FILE_RECORDS                  = 8
+^HEADER                     = ("CMB_649856565MIN28420822176CH00111P1.CSV",1)
+^SPREADSHEET                = ("CMB_649856565MIN28420822176CH00111P1.CSV",2)
+DATA_SET_ID                   = "MSL-M-CHEMIN-5-RDR-V1.0"
+PRODUCT_ID                    = "CMB_649856565MIN28420822176CH00111P1"
+PRODUCT_VERSION_ID            = "V1.0"
+RELEASE_ID                    = "0026"
+SOURCE_PRODUCT_ID             = "CMB_649856565RDA28420822176CH00111P1"
+PRODUCT_TYPE                  = "CHEMIN_MIN"
+INSTRUMENT_HOST_ID            = "MSL"
+INSTRUMENT_HOST_NAME          = "MARS SCIENCE LABORATORY"
+INSTRUMENT_ID                 = "CHEMIN"
+TARGET_NAME                   = "MARS"
+MSL:CALIBRATION_STANDARD_NAME = "N/A"
+MISSION_PHASE_NAME            = "PRIMARY SURFACE MISSION"
+PRODUCT_CREATION_TIME         = 2021-02-07T16:36:00 
+START_TIME                    = 2020-08-05T00:24:38.101
+STOP_TIME                     = "UNK"
+SPACECRAFT_CLOCK_START_COUNT  = "649856565.343"
+SPACECRAFT_CLOCK_STOP_COUNT   = "UNK"
+OBJECT                        = HEADER
+ BYTES                        = 23
+ HEADER_TYPE                  = TEXT
+ DESCRIPTION                  = "This header record contains column headings
+ for the following table." 
+END_OBJECT                    = HEADER
+
+OBJECT                        = SPREADSHEET
+ ROWS                         = 7
+ ROW_BYTES                    = 134
+ FIELDS                       = 3
+ FIELD_DELIMITER              = "COMMA"
+ ^STRUCTURE                   = "CHEMIN_MIN.FMT"
+DESCRIPTION                   = "This table contains mineral abundances and
+ analytical errors derived from diffraction-all K-alpha diffraction data for
+ the first Mary Anning drill sample, analyzed in CheMin cell number 7a
+ (Mylar window). The analysis is based on RDA file
+ CMB_649856565RDA28420822176CH00111P1. Mineral identifications, abundances
+ and analytical errors for crystalline phases, other than clay minerals,
+ were determined using the program JADE. Mineral identification as
+ Fe-carbonate may include siderite and/or ankerite. In addition to these
+ crystalline phases, the program FULLPAT was used to estimate the abundance
+ of poorly crystalline clay minerals at ~28 +/- 10 weight% of the total
+ sample. High intensity in the low 2-theta region and a broad amorphous hump
+ were modeled using FULLPAT to indicate that ~27 +/- 20 weight% of the total
+ sample consists of X-ray amorphous materials. Column 1 of the table lists
+ mineral identifications, column 2 lists the mineral abundances in weight
+ percent, and column 3 indicates the estimated 2-sigma analytical errors."
+END_OBJECT                    = SPREADSHEET
+END
+

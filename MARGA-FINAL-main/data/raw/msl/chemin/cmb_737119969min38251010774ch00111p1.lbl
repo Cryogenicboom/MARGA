@@ -1,0 +1,62 @@
+PDS_VERSION_ID                = PDS3
+RECORD_TYPE                   = STREAM
+RECORD_BYTES                  = 200
+FILE_RECORDS                  = 11
+^HEADER                     = ("CMB_737119969MIN38251010774CH00111P1.CSV",1)
+^SPREADSHEET                = ("CMB_737119969MIN38251010774CH00111P1.CSV",2)
+DATA_SET_ID                   = "MSL-M-CHEMIN-5-RDR-V1.0"
+PRODUCT_ID                    = "CMB_737119969MIN38251010774CH00111P1"
+PRODUCT_VERSION_ID            = "V1.0"
+RELEASE_ID                    = "0034"
+SOURCE_PRODUCT_ID             = "CMB_737119969RDA38251010774CH00111P1"
+PRODUCT_TYPE                  = "CHEMIN_MIN"
+INSTRUMENT_HOST_ID            = "MSL"
+INSTRUMENT_HOST_NAME          = "MARS SCIENCE LABORATORY"
+INSTRUMENT_ID                 = "CHEMIN"
+TARGET_NAME                   = "MARS"
+MSL:CALIBRATION_STANDARD_NAME = "N/A"
+MISSION_PHASE_NAME            = "PRIMARY SURFACE MISSION"
+PRODUCT_CREATION_TIME         = 2023-10-30T02:13:45 
+START_TIME                    = 2023-05-12T00:28:13.193
+STOP_TIME                     = "UNK"
+SPACECRAFT_CLOCK_START_COUNT  = "737119969.275"
+SPACECRAFT_CLOCK_STOP_COUNT   = "UNK"
+OBJECT                        = HEADER
+ BYTES                        = 23
+ HEADER_TYPE                  = TEXT
+ DESCRIPTION                  = "This header record contains column headings
+ for the following table." 
+END_OBJECT                    = HEADER
+
+OBJECT                        = SPREADSHEET
+ ROWS                         = 10
+ ROW_BYTES                    = 177
+ FIELDS                       = 3
+ FIELD_DELIMITER              = "COMMA"
+ ^STRUCTURE                   = "CHEMIN_MIN.FMT"
+DESCRIPTION                   = "This table contains mineral abundances and
+ analytical errors derived from diffraction-all K-alpha diffraction data for
+ the Ubajara drill sample, analyzed in CheMin cell number 15a (Kapton
+ window). The analysis is based on RDA file
+ CMB_737119969RDA38251010774CH00111P1. That RDA file represents the first
+ night of analysis, with files produced on sol 3825. Warm temperatures
+ inside CheMin (up to ~30 degrees centigrade, with correspondingly low
+ relative humidity) cause conversion of gypsum to bassanite over time
+ (Vaniman et al., 2018, American Mineralogist 103, 1011-1020); analyses of
+ Ubajara on four different sols (files produced on sols 3825, 3830, 3833,
+ and 3842) showed that starkeyite observed on sol 3825 dehydrated in a
+ similar manner, but becoming X-ray amorphous rather than converting to a
+ less hydrous crystalline Mg-sulfate. For this reason we used the first
+ night of analysis to determine the in-situ abundances of gypsum, bassanite,
+ starkeyite, and amorphous material in Ubajara. Mineral identifications,
+ abundances and analytical errors for crystalline phases were determined
+ using the program JADE. In addition to the crystalline phases, high
+ intensity in the low 2-theta region and a broad amorphous hump were modeled
+ using FULLPAT to indicate that ~60 +/- 23 weight% of the total sample
+ consists of X-ray amorphous material, which includes a significant original
+ amount of amorphous magnesium sulfate. Column 1 of the table lists mineral
+ identifications, column 2 lists the mineral abundances in weight percent,
+ and column 3 indicates the estimated 2-sigma analytical errors."
+END_OBJECT                    = SPREADSHEET
+END
+
