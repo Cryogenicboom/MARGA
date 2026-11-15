@@ -4,6 +4,8 @@
 
 MARGA is an offline lightweight Mars route-planning application. It is designed for first human mission to Mars, providing them with a digital navigation system. Astronauts can use it to plan their route with accordance to their mission data. **Currently the application only focuses on GALE Crater.** Therefore it uses scientific observations from NASA Mars missions (Curiosity, CRISM, MOLA, HiRISE) with terrain-aware traversal routing to assist astronaut mission planning in **Gale Crater / Mount Sharp**.
 
+Checkout the live project here: https://marga-wugg.vercel.app/
+
 Below reading will help you with downlaoding and running the project. Further below we have also provided a guide to use the application, although a detailed manual is still in development, we are sorry for the delay :) . 
 ---
 
