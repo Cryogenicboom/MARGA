@@ -11,7 +11,7 @@ MARGA is an offline-first, lightweight Mars route-planning application designed 
 
 ## NASA Space Apps Challenge Alignment
 
-MARGA was created for the **NASA Space Apps Challenge 2026** addressing the **"Create a Martian Map"** challenge.
+MARGA was created for the **NASA Space Apps Challenge 2026** addressing the **Interplanetary Survival Guide: Martian Map** challenge.
 
 MARGA addresses the challenge by combining orbital terrain products and landed mission science into an interactive, offline-capable digital map and navigation workstation. Key alignment features include:
 
