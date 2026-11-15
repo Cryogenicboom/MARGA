@@ -201,7 +201,7 @@ The project uses the Mars coordinate reference system identified as **`IAU_2015:
 
 In accordance with NASA Space Apps Challenge guidelines, the AI tools and synthetic intelligence assistance used during the development of MARGA are fully disclosed:
 
-- **AI Tools Used**: Google Gemini (including Android Studio AI Agent and LLM assistance).
+- **AI Tools Used**: Claude Code, Gemini CLI, Kimi CLI.
 - **Role in Development and Testing**: AI models were used to assist in drafting project documentation, creating TypeScript and Python unit/integration test suites, refactoring GIS data transformation workflows, formatting Markdown artifacts, and generating synthetic test terrain generation scripts (`make_synthetic_demo.py`).
 - **Human Oversight**: Core routing algorithms, coordinate system implementations, data provenance checks, and application integration were authored, reviewed, and verified by the development team.
 
