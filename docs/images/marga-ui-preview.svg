@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">MARGA mission planning UI</title>
+  <desc id="desc">Dark Mars navigation dashboard with map, terrain layer controls, objective panel, and route metrics.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#07141d"/>
+      <stop offset="100%" stop-color="#040b11"/>
+    </linearGradient>
+    <linearGradient id="map" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#b7784d"/>
+      <stop offset="100%" stop-color="#6f3e2a"/>
+    </linearGradient>
+    <linearGradient id="routeLine" x1="0" x2="1">
+      <stop offset="0%" stop-color="#7cb7ff"/>
+      <stop offset="100%" stop-color="#99d2ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="900" fill="url(#bg)"/>
+
+  <rect x="0" y="0" width="1400" height="56" fill="#0d1821" opacity="0.96"/>
+  <rect x="16" y="14" width="18" height="18" rx="2" fill="#c5d9e4" opacity="0.9"/>
+  <text x="48" y="31" font-size="22" font-family="Segoe UI, Arial, sans-serif" fill="#eaf3ff" font-weight="700">MARGA</text>
+  <g font-size="15" font-family="Segoe UI, Arial, sans-serif" fill="#dfeaf4">
+    <text x="510" y="31">Gale Crater / Mount Sharp</text>
+  </g>
+  <g>
+    <rect x="950" y="11" width="110" height="32" rx="16" fill="#0f1e2f" stroke="#a7b9c8" stroke-opacity="0.7"/>
+    <text x="978" y="31" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#d9eaf7">High contrast</text>
+    <rect x="1068" y="11" width="104" height="32" rx="16" fill="#0f1e2f" stroke="#a7b9c8" stroke-opacity="0.7"/>
+    <text x="1096" y="31" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#d9eaf7">Reset plan</text>
+    <rect x="1180" y="11" width="128" height="32" rx="16" fill="#2d4d45" stroke="#8ad4b4" stroke-opacity="0.8"/>
+    <text x="1208" y="31" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#dffef2">Terrain unvalidated</text>
+  </g>
+
+  <rect x="0" y="56" width="280" height="844" fill="#0a121b" opacity="0.92"/>
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#edf4fb">
+    <text x="22" y="92" font-size="14" letter-spacing="1.5">MAP LAYERS</text>
+    <text x="28" y="146" font-size="18" fill="#dfeaf5">Base imagery</text>
+    <g fill="none" stroke="#e8f0f7" stroke-width="2">
+      <circle cx="41" cy="170" r="8"/>
+      <circle cx="41" cy="196" r="8"/>
+      <circle cx="41" cy="222" r="8"/>
+      <circle cx="41" cy="248" r="8"/>
+    </g>
+    <g fill="#dfeaf5" font-size="16">
+      <text x="58" y="175">HiRISE mosaic 5 m</text>
+      <text x="58" y="201">CTX mosaic 10.18 m • offset ≈ 123 m</text>
+      <text x="58" y="227">Hillshade (from the DEM)</text>
+      <text x="58" y="253">None</text>
+    </g>
+    <text x="22" y="292" font-size="18" fill="#dfeaf5">Terrain</text>
+    <g fill="#dfeaf5" font-size="16">
+      <text x="58" y="330">Elevation (shaded relief)</text>
+      <text x="58" y="355">Slope</text>
+      <text x="58" y="380">Slope-limit hazard (over 15°)</text>
+      <text x="58" y="405">Roughness</text>
+    </g>
+    <g fill="none" stroke="#dfeaf5" stroke-width="2">
+      <rect x="25" y="314" width="15" height="15" fill="#dfeaf5"/>
+      <rect x="25" y="339" width="15" height="15"/>
+      <rect x="25" y="364" width="15" height="15" fill="#dfeaf5"/>
+      <rect x="25" y="389" width="15" height="15"/>
+    </g>
+    <text x="22" y="440" font-size="14" letter-spacing="1.5">MISSION</text>
+    <g fill="#dfeaf5" font-size="16">
+      <text x="58" y="470">Scientific targets</text>
+      <text x="58" y="495">Planned route</text>
+      <text x="58" y="520">Return route</text>
+      <text x="58" y="545">Route alternatives</text>
+    </g>
+    <g fill="none" stroke="#dfeaf5" stroke-width="2">
+      <rect x="25" y="454" width="15" height="15" fill="#dfeaf5"/>
+      <rect x="25" y="479" width="15" height="15" fill="#dfeaf5"/>
+      <rect x="25" y="504" width="15" height="15" fill="#dfeaf5"/>
+      <rect x="25" y="529" width="15" height="15"/>
+    </g>
+    <text x="22" y="590" font-size="14" letter-spacing="1.5">CURIOSITY SURFACE DATA</text>
+    <g fill="#dfeaf5" font-size="16">
+      <text x="58" y="620">CheMin mineral samples</text>
+      <text x="58" y="645">Rover views (Navcam 360°)</text>
+    </g>
+    <g fill="none" stroke="#dfeaf5" stroke-width="2">
+      <rect x="25" y="604" width="15" height="15" fill="#dfeaf5"/>
+      <rect x="25" y="629" width="15" height="15"/>
+    </g>
+    <text x="22" y="700" font-size="14" letter-spacing="1.5">SCIENCE OBJECTIVES</text>
+    <g fill="#dfeaf5" font-size="16">
+      <text x="58" y="730">Pre-mission plan • read-only</text>
+      <text x="58" y="755">Investigate Ancient Water &amp; Hydrate...</text>
+    </g>
+    <g fill="none" stroke="#dfeaf5" stroke-width="2">
+      <circle cx="39" cy="724" r="7" fill="none"/>
+      <circle cx="39" cy="749" r="7" fill="none"/>
+    </g>
+  </g>
+
+  <g>
+    <rect x="280" y="56" width="776" height="490" fill="#0b1a24" opacity="0.95"/>
+    <rect x="296" y="74" width="742" height="38" rx="8" fill="#101d29" stroke="#4d5f73"/>
+    <text x="316" y="99" font-size="18" fill="#dfeaf5" font-family="Segoe UI, Arial, sans-serif">Click a target or the map destination • Shift+click start • Ringed dot: rover view • Diamond: mineral sample</text>
+    <rect x="844" y="74" width="28" height="28" rx="5" fill="#1f2a34" stroke="#d0e9ff"/>
+    <text x="854" y="93" font-size="22" fill="#d0e9ff" font-family="Segoe UI, Arial, sans-serif">+</text>
+
+    <g>
+      <circle cx="640" cy="280" r="26" fill="#f5f6f8" opacity="0.95"/>
+      <circle cx="640" cy="280" r="18" fill="#f2d76d"/>
+      <circle cx="640" cy="280" r="8" fill="#0d1821"/>
+    </g>
+    <g>
+      <circle cx="468" cy="255" r="22" fill="#f3f6f8" opacity="0.95"/>
+      <circle cx="468" cy="255" r="12" fill="#d5d4d6"/>
+      <circle cx="468" cy="255" r="5" fill="#0d1821"/>
+    </g>
+    <g>
+      <circle cx="586" cy="310" r="18" fill="#f7f8f8" opacity="0.92"/>
+      <circle cx="586" cy="310" r="9" fill="#9bbbe3"/>
+    </g>
+
+    <path d="M 468 255 L 578 303 L 640 280 L 712 334" stroke="url(#routeLine)" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M 640 280 L 710 320" stroke="#7cc2ff" stroke-width="3" fill="none" opacity="0.8" stroke-dasharray="10 10"/>
+
+    <path d="M 540 318 C 620 150, 670 208, 740 255" stroke="#9f684b" stroke-width="2" fill="none" opacity="0.35"/>
+    <path d="M 470 330 C 650 255, 720 310, 812 380" stroke="#e7d7ab" stroke-width="1.5" fill="none" opacity="0.3"/>
+
+    <g font-family="Segoe UI, Arial, sans-serif" fill="#dfeaf5">
+      <text x="460" y="400" font-size="28">DEM master (GeoTiff)</text>
+    </g>
+
+    <g>
+      <rect x="280" y="546" width="776" height="266" fill="#0a121b" opacity="0.95"/>
+      <text x="315" y="585" font-size="18" fill="#dfeaf5" font-family="Segoe UI, Arial, sans-serif">ELEVATION PROFILE</text>
+      <g fill="#dfeaf5" font-size="12" font-family="Segoe UI, Arial, sans-serif">
+        <text x="316" y="628">Start</text>
+        <text x="734" y="628">Destination</text>
+      </g>
+      <g stroke="#8aa4b9" stroke-width="1">
+        <line x1="312" y1="640" x2="1015" y2="640"/>
+      </g>
+      <path d="M 312 640 C 380 610, 455 585, 540 595 S 700 550, 820 536 S 940 520, 1020 500" fill="none" stroke="#8abbe6" stroke-width="4"/>
+      <g fill="#dfeaf5" font-size="12" font-family="Segoe UI, Arial, sans-serif">
+        <text x="322" y="615">-4500 m</text>
+        <text x="364" y="690">0 m</text>
+        <text x="671" y="690">100 m</text>
+        <text x="855" y="690">200 m</text>
+        <text x="978" y="690">300 m</text>
+      </g>
+      <line x1="315" y1="618" x2="315" y2="640" stroke="#dfeaf5"/>
+      <line x1="1015" y1="618" x2="1015" y2="640" stroke="#dfeaf5"/>
+    </g>
+  </g>
+
+  <g>
+    <rect x="1056" y="56" width="344" height="756" fill="#0b111a" opacity="0.96"/>
+    <g font-family="Segoe UI, Arial, sans-serif">
+      <rect x="1072" y="72" width="312" height="36" rx="8" fill="#111f2d" stroke="#4d5f73"/>
+      <text x="1100" y="96" font-size="15" fill="#dfeaf5">ROUTE</text>
+      <text x="1248" y="96" font-size="15" fill="#dfeaf5">EVA</text>
+      <text x="1335" y="96" font-size="15" fill="#dfeaf5">CONTEXT</text>
+      <text x="1420" y="96" font-size="15" fill="#dfeaf5">CATALOGUE</text>
+    </g>
+
+    <g font-family="Segoe UI, Arial, sans-serif" fill="#ecf5ff">
+      <text x="1088" y="170" font-size="22" font-weight="600">Within EVA budget</text>
+      <rect x="1364" y="148" width="92" height="28" rx="10" fill="#203b41" stroke="#82d4be"/>
+      <text x="1392" y="167" font-size="12" fill="#dffef2">Calculated</text>
+    </g>
+
+    <g font-family="Segoe UI, Arial, sans-serif" fill="#dfeaf5" font-size="15">
+      <text x="1088" y="225">Route</text>
+      <text x="1300" y="225" text-anchor="end">Starting hub</text>
+      <text x="1088" y="260">Bradbury Landing Site</text>
+      <text x="1350" y="260" text-anchor="end">4.5895° S, 137.4417° E</text>
+      <text x="1088" y="325">Yellowknife Bay (Sheepbed Mudstone)</text>
+      <text x="1360" y="325" text-anchor="end">4.5880° S, 137.4480° E</text>
+      <text x="1088" y="360">Route distance (map)</text>
+      <text x="1360" y="360" text-anchor="end">383 m</text>
+      <text x="1088" y="393">Surface distance</text>
+      <text x="1360" y="393" text-anchor="end">383 m</text>
+      <text x="1088" y="428">Outbound travel</text>
+      <text x="1360" y="428" text-anchor="end">19 min</text>
+      <text x="1088" y="462">Return travel</text>
+      <text x="1360" y="462" text-anchor="end">22 min</text>
+      <text x="1088" y="495">Elevation gain / loss</text>
+      <text x="1360" y="495" text-anchor="end">1 m / 15 m</text>
+    </g>
+
+    <g>
+      <text x="1088" y="560" font-size="15" fill="#dfeaf5" font-family="Segoe UI, Arial, sans-serif">TERRAIN DIFFICULTY</text>
+      <rect x="1088" y="580" width="288" height="14" rx="7" fill="#243643"/>
+      <rect x="1088" y="580" width="246" height="14" rx="7" fill="#7fd78b"/>
+      <text x="1388" y="592" font-size="14" fill="#dfeaf5" font-family="Segoe UI, Arial, sans-serif">85%</text>
+      <g font-size="12" fill="#dfeaf5" font-family="Segoe UI, Arial, sans-serif">
+        <text x="1088" y="620">Flat, under 5°</text>
+        <text x="1288" y="620">15%</text>
+      </g>
+      <text x="1088" y="695" font-size="15" fill="#dfeaf5">CURIOSITY DATA ALONG THIS ROUTE</text>
+      <g font-size="15" fill="#dfeaf5" font-family="Segoe UI, Arial, sans-serif">
+        <text x="1106" y="724">Rover view, sols 16–17</text>
+        <text x="1348" y="724" text-anchor="end">3 m off route</text>
+        <text x="1106" y="755">Rover view, sol 22</text>
+        <text x="1348" y="755" text-anchor="end">13 m off route</text>
+      </g>
+    </g>
+  </g>
+
+  <text x="275" y="864" font-size="12" fill="#8ea7b6" font-family="Segoe UI, Arial, sans-serif">Route Bradbury Landing Site → Yellowknife Bay (Sheepbed Mudstone) • Gale merged HiRISE DEM (Mars Trek Gale_DEM_SMG_1m), ~20 m input • 20 m cell</text>
+</svg>
