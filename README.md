@@ -1,15 +1,26 @@
 # MARGA [ Mars Adaptive Route Guidance Architecture ]
 
 ![MARGA System Prototype](https://img.shields.io/badge/MARGA-v1.0--PROTOTYPE-orange?style=for-the-badge)
+![NASA Space Apps Challenge](https://img.shields.io/badge/NASA%20Space%20Apps-2026-blue?style=for-the-badge)
 
-MARGA is an offline lightweight Mars route-planning application. It is designed for first human mission to Mars, providing them with a digital navigation system. Astronauts can use it to plan their route with accordance to their mission data. **Currently the application only focuses on GALE Crater.** Therefore it uses scientific observations from NASA Mars missions (Curiosity, CRISM, MOLA, HiRISE) with terrain-aware traversal routing to assist astronaut mission planning in **Gale Crater / Mount Sharp**.
+MARGA is an offline-first, lightweight Mars route-planning application designed for future human surface missions to Mars. It provides astronauts and mission planners with a digital surface navigation and decision-support workstation, integrating scientific observations from NASA Mars missions (Curiosity, CRISM, MOLA, CTX, HiRISE) with terrain-aware traversal routing in **Gale Crater / Mount Sharp**.
 
-Checkout the live project here: https://marga-wugg.vercel.app/
+**Live Prototype:** https://marga-wugg.vercel.app/
 
-Below reading will help you with downlaoding and running the project. Further below we have also provided a guide to use the application, although a detailed manual is still in development, we are sorry for the delay :) . 
 ---
 
-MARGA is a **research** and **planning** prototype. Its route calculations are not certified astronaut safety recommendations. 
+## NASA Space Apps Challenge Alignment
+
+MARGA was created for the **NASA Space Apps Challenge 2026** addressing the **"Create a Martian Map"** challenge.
+
+MARGA addresses the challenge by combining orbital terrain products and landed mission science into an interactive, offline-capable digital map and navigation workstation. Key alignment features include:
+
+- **Interactive Multi-Layered Martian Map**: High-resolution visualization of CTX and HiRISE imagery, hillshade, elevation DEMs, continuous slope, terrain roughness, and NASA Mars Trek context layers.
+- **Terrain-Aware Traversal Navigation**: A deterministic, terrain-cost-weighted routing engine in Python and TypeScript calculating optimal EVA routes, slope safety limits, walking speeds, and return-time margins.
+- **Landed Science Data Provenance**: Deep integration of NASA MSL Curiosity observations, including quantitative CheMin X-ray diffraction mineralogy tables from the NASA PDS and 360° Navcam panoramic surface context.
+- **Offline Mission Reliability**: Built with an offline-first architecture to ensure operational reliability on Mars without reliance on high-bandwidth Earth connectivity.
+
+---
 
 ## Project Structure
 
@@ -36,6 +47,9 @@ MARGA/
 ├── docs/                 # Architecture and data documentation
 └── README.md
 ```
+
+---
+
 ## Getting Started
 
 ### Requirements
@@ -45,32 +59,29 @@ Install **Node.js 22 LTS or later**.
 - Windows: `winget install OpenJS.NodeJS.LTS`
 - macOS: `brew install node`
 
-The application is designed to work offline after its dependencies and regional data have been installed. **Don't worry**, the BAT file automatically downlaods the given dependencies and prepare the application for you. [This script is coded with super intelligence]
+The application is designed to work offline after its dependencies and regional data have been installed. The included setup launcher automatically manages dependency installation.
 
-## Download and Run the project
+### Download and Run the Project
 
-run the below commands in shell:
-<br>
+Run the following commands in your shell:
 
 ```bash
 git clone https://github.com/Cryogenicboom/MARGA.git
 cd MARGA
 ```
-<br>
 
-or You can also download the repository using GitHub's **Code → Download ZIP** option.
+You can also download the repository using GitHub's **Code → Download ZIP** option.
 
-##### Start the application
+#### Start the Application
 
 - **Windows:** Run `Start MARGA.bat`.
 - **macOS/Linux:** Run `./start.sh` from the project directory.
 
 The launcher installs the frontend dependencies on the first run and starts the application in your browser. By default, the application opens at: `http://localhost:3000`
-<br>
 
-Keep the terminal window open while using MARGA. Close it or press `Ctrl+C` to stop the application. If port 3000 is already in use, the launcher selects another available port and displays it.
+Keep the terminal window open while using MARGA. Press `Ctrl+C` to stop the application.
 
-##### Manual installation
+#### Manual Installation
 
 You can also start the frontend manually:
 
@@ -80,303 +91,143 @@ npm install
 npm run dev
 ```
 
+---
+
 ## Using MARGA
 
 The main screen is arranged like a mission-planning workstation. Exploration settings and objectives are on the left, the map and elevation profile are in the centre, and route and mission information are on the right.
 
-### 1. Select a destination
+### 1. Select a Destination
+Choose a target from the catalogue or click a target marker on the map. You can also select a location inside the available terrain boundary. To set the starting point, hold `Shift` and click the map.
 
-Choose a target from the catalogue or click a target marker on the map. You can also select a location inside the available terrain boundary.
-
-To set the starting point, hold `Shift` and click the map.
-
-### 2. Explore the map layers
-
+### 2. Explore the Map Layers
 The map provides several layers for examining the region:
-
 - HiRISE and CTX imagery
 - Hillshade
 - Elevation
-- Slope
-- Roughness
-- Scientific targets
-- Planned route
+- Slope and Roughness
+- Scientific targets and Planned route overlays
 
-Slope can be displayed as a continuous layer or as terrain classes. The slope-limit overlay highlights areas that the routing engine will not enter under the current settings.
+Slope can be displayed as a continuous layer or as terrain classes. The slope-limit overlay highlights areas that the routing engine will not enter under the current settings. Additional Mars Trek context layers are available under **More layers**.
 
-Additional Mars Trek context layers are available under **More layers**.
+### 3. Choose a Scientific Objective
+The objectives panel contains pre-mission objectives. Selecting an objective displays its associated science targets.
 
-### 3. Choose a scientific objective
+### 4. Configure the Route
+The route-planning panel allows configuring starting hub, destination, intermediate stops, walking speed, maximum slope limit, EVA duration budget, and safety time reserves. Available route optimization modes include *Lowest terrain cost*, *Shortest route*, and *Fastest estimated route*.
 
-The objectives panel contains the available pre-mission objectives. Selecting an objective displays its associated targets.
+### 5. Review the Elevation Profile
+The elevation profile shows terrain changes along the planned route, with interactive hovering synchronized between the map and profile.
 
-The objective definitions are read-only. If a route is already planned, the application asks before switching objectives.
+### 6. Mission Information Panels
+- **ROUTE**: Selected locations, total distance, difficulty rating, estimated duration, and JSON export.
+- **EVA**: Mission timeline, remaining time budget, and safety margins.
+- **CONTEXT**: Radiation baselines, dataset validity, and terrain diagnostics.
+- **CATALOGUE**: Objectives, target records, and NASA PDS references.
 
-### 4. Configure the route
+### 7. Curiosity Mineral Data
+Includes quantitative Curiosity CheMin mineral-abundance records obtained from NASA's PDS Geosciences Node (weight %, 2σ errors, clay/amorphous fractions, and PDS links).
 
-The route-planning panel allows you to select:
-
-- Starting hub
-- Destination
-- Intermediate science stops
-- Route preference
-- Walking speed
-- Maximum slope
-- EVA duration
-- Safety reserve
-
-Intermediate stops can be added, removed or reordered.
-
-The available route preferences are:
-
-- Lowest terrain cost
-- Shortest route
-- Fastest estimated route
-
-After changing the settings, use **Recalculate** to generate an updated route.
-
-### 5. Review the elevation profile
-
-The elevation profile shows how the terrain changes along the planned route.
-
-Hovering over the profile identifies the corresponding location on the map. Hovering over the route on the map highlights the matching point in the profile. Clicking the profile centres the map on that location.
-
-### 6. Review mission information
-
-The right-hand panel contains four sections:
-
-**ROUTE** — Shows the selected locations, total distance, route difficulty, estimated duration and feasibility. Per-leg information and JSON export are available under Technical Details.
-
-**EVA** — Displays the mission timeline, remaining time and any time deficit against the configured budget.
-
-**CONTEXT** — Provides radiation references, environmental information, terrain conditions and dataset validity. Additional source details are available under Data Sources and Diagnostics.
-
-**CATALOGUE** — Contains objectives, target records, NASA references and crew notes.
-
-### 7. Curiosity mineral data
-
-The Catalogue includes a Minerals section containing Curiosity CheMin mineral-abundance records obtained from NASA's PDS Geosciences Node.
-
-The records include:
-
-- Mineral abundance in weight percent
-- Reported 2σ errors
-- Clay and amorphous fractions from the relevant PDS labels
-- Links to the original PDS files
-
-Target records also list the available analysed samples associated with nearby locations.
-
-### 8. Curiosity rover views
-
-Selected locations provide access to 360-degree panoramas assembled from Curiosity Navcam frames.
-
-These can be opened from the map markers, a target's **Rover view nearby** option or the Route tab.
-
-Drag to look around, scroll to zoom, and use **Earlier** and **Later** to move through the rover traverse. A small map inset shows the observation location. Press `Esc` to close the viewer.
-
-### 9. Crew notes
-
-Crew notes and observations are kept separate from the NASA science catalogue and marked as **Crew**.
-
-They are stored in the browser. Use **Export** under Catalogue → Crew Notes to save a copy of the mission record.
-
-### 10. High-contrast display
-
-The header includes a high-contrast option that switches the interface to a black-and-white colour scheme for improved visibility.
+### 8. Curiosity Rover Panoramas
+Provides 360-degree panoramas assembled from Curiosity Navcam frames with spatial context and traverse progression.
 
 ---
 
-## Terrain Data and Route Planning
+## Terrain Data & Route Planning
 
-### Gale Crater elevation model
+### NASA Orbital DEM vs. Synthetic Demonstration Terrain
 
-The current prototype uses a Gale Crater elevation model identified in the project as:
+The project maintains two distinct terrain packages to support both realistic mission analysis and offline development/testing:
 
-`Gale_DEM_SMG_1m`
+1. **Real NASA DEM (`Gale_DEM_SMG_1m`)**:
+   - The primary terrain package (`frontend/public/terrain/gale`) is derived from NASA Mars Trek high-resolution orbital data (HiRISE/CTX-derived), exported at ~20 m spatial resolution covering the Curiosity traverse area in Gale Crater.
+   - **Data Status**: Marked as unvalidated for operational flight navigation; intended strictly for research and decision-support prototyping.
 
-The source is NASA Mars Trek. The model is described in the project as HiRISE-derived and exported at approximately 20 m for the Curiosity traverse area. It is packaged under:
+2. **Synthetic Demonstration Terrain (`data/terrain_backup/gale_synthetic_demo/`)**:
+   - An artificial elevation raster generated for offline algorithm benchmarking, fallback scenarios, and unit/integration test suites (`make_synthetic_demo.py`).
+   - Allows developers to test route optimization and frontend rendering without requiring full GIS raster downloads.
 
-`frontend/public/terrain/gale`
+### Rebuilding or Switching Terrain Data
 
-**Data status:** The terrain model is currently marked as unvalidated. It has not yet been fully checked by the data team and must not be treated as operational navigation data.
-
-### Rebuilding the terrain data
-
-To download the source data:
+To download the NASA source DEM data:
 
 ```bash
 python engine/tools/fetch_gale_dem.py
 ```
 
-The download is approximately 16 MB and is saved under `data/raw/`.
-
-To run the terrain checks:
+To run terrain validation checks (coverage, fill values, target elevations):
 
 ```bash
 python engine/tools/check_terrain.py
 ```
 
-These checks cover data coverage, fill values and target elevations.
-
-### Switching to the synthetic demonstration terrain
-
-To restore the synthetic terrain dataset, copy the contents of:
-
-`data/terrain_backup/gale_synthetic_demo/`
-
-into:
-
-`frontend/public/terrain/gale/`
-
-Remove `elevation.f32` from that destination, or run:
+To switch to the synthetic demonstration terrain package:
 
 ```bash
 python engine/tools/make_synthetic_demo.py
 ```
 
+---
+
+## Environmental Observations & Limitations
+
+MARGA focuses on spatial, topographic, and mineralogical data. Users should note the following environmental data limitations:
+
+- **Atmospheric & Weather Data**: Real-time or simulated atmospheric temperature, surface pressure, wind vectors, and seasonal dust storm dynamics are **not loaded or modeled** in the current prototype.
+- **Radiation Baselines**: Radiation context values and dose rates provided in the application are **historical reference baselines** derived from Curiosity's Radiation Assessment Detector (RAD) instrument; they do not provide real-time space weather forecasting or active solar particle event alerts.
+
+---
+
+## Science Target Locations & Catalogue Provenance
+
+The scientific catalogue links Curiosity-visited locations to recorded rover waypoints (matching NASA's MSL localization within ~15 m of the DEM):
+
+- **CheMin Product IDs**: CheMin mineral sample product records carry PDS label attributes. Individual product revision IDs have not been independently cross-verified against every PDS archive release.
+- **Representative & Placeholder Locations**:
+  - `target_crater_rim_fault` (**"Northern Rim Approach"**) is a planning placeholder; the physical crater rim of Gale lies north outside the current DEM boundaries and is not a verified reachable target.
+  - `target_rad_station_alpha` is a representative planning location used to display RAD radiation baseline metrics, rather than a specific physical sampling station.
+
+---
+
 ## GIS Layers and Coordinate System
 
-The map and routing engine use the same underlying elevation model so that the terrain displayed to the user corresponds to the terrain used for route calculations.
+Map layers and routing grids use Cloud Optimized GeoTIFFs in `frontend/public/gis/gale/` prepared using Rasterio.
 
-Map layers are generated as Cloud Optimized GeoTIFFs in:
+The project uses the Mars coordinate reference system identified as **`IAU_2015:49900`** (planetocentric Mars sphere). For detailed spatial transformations and layer offset notes (such as CTX 120 m alignment offsets), consult `gis/README.md`.
 
-`frontend/public/gis/gale/`
+---
 
-They are prepared using Rasterio from the elevation data used by the routing grid.
+## AI / Synthetic Intelligence (SI) Disclosure
 
-The project uses the Mars coordinate reference identified in its GIS configuration as:
+In accordance with NASA Space Apps Challenge guidelines, the AI tools and synthetic intelligence assistance used during the development of MARGA are fully disclosed:
 
-`IAU_2015:49900`
+- **AI Tools Used**: Google Gemini (including Android Studio AI Agent and LLM assistance).
+- **Role in Development and Testing**: AI models were used to assist in drafting project documentation, creating TypeScript and Python unit/integration test suites, refactoring GIS data transformation workflows, formatting Markdown artifacts, and generating synthetic test terrain generation scripts (`make_synthetic_demo.py`).
+- **Human Oversight**: Core routing algorithms, coordinate system implementations, data provenance checks, and application integration were authored, reviewed, and verified by the development team.
 
-The configuration describes a planetocentric Mars coordinate system using a Mars sphere.
-
-The CRS label and its relationship to the source DEM are documented in:
-
-`gis/README.md`
-
-This documentation should be consulted before adding or transforming additional spatial datasets.
-
-### Imagery and context layers
-
-The Gale region data package includes:
-
-- HiRISE imagery at approximately 5 m
-- CTX imagery at approximately 10 m
-- Slope and roughness rasters
-- Mars Trek exploration-zone layers
-- Regions of interest
-- Curiosity traverse information
-- Geological units
-- Place names
-- Dune fields
-
-These layers are retrieved and processed using:
-
-```bash
-python -m marga_gis.region fetch
-python -m marga_gis.region build gale
-```
-
-The project records request URLs, checksums and timestamps in:
-
-`data/regions/gale/manifest.json`
-
-The current data preparation notes report that the CTX imagery is approximately 120 m southwest of the DEM, while the HiRISE imagery aligns with it. These offsets are retained in the delivered data rather than silently corrected.
-
-
-## Curiosity Mineralogy and Rover Data
-
-Curiosity mineralogy and rover imagery are prepared through the GIS data tools.
-
-From the `gis/` directory, run:
-
-```bash
-python -m marga_gis.msl fetch
-python -m marga_gis.msl build
-```
-
-The workflow retrieves CheMin mineral-abundance tables from the NASA PDS Geosciences Node and Navcam frames from NASA's MSL raw-image API.
-
-The generated files include:
-
-```text
-frontend/public/science/chemin_samples.json
-frontend/public/rover/
-```
-
-Download requests are recorded in:
-
-`data/msl/manifest.json`
-
-For details about the data sources, processing method and known limitations, see:
-
-`docs/data_sources.md`
-
-
-## Science Target Locations
-
-The catalogue includes Curiosity-visited locations using recorded rover positions associated with named drill sites and stops.
-
-According to the project data notes, these locations agree with the DEM within 15 m.
-
-Each target should retain its source information so that users can trace it back to the relevant rover waypoint or observation.
-
-**Northern Rim Approach** is a planning placeholder. The actual crater rim lies outside the current terrain model and should not be interpreted as a verified, reachable destination.
-
+---
 
 ## Verification and Build
 
-The repository includes separate checks for the frontend, routing engine and GIS data workflows.
-
-### Frontend production build
+The repository includes test suites across the frontend, routing engine, and GIS workflows.
 
 ```bash
-cd frontend
-npm run build
+# Frontend build
+cd frontend && npm run build
+
+# TypeScript engine tests (25 tests)
+cd engine/ts && npm install && npm test
+
+# Python reference engine tests (115 tests)
+cd engine && python -m pytest -q
+
+# GIS and data-processing tests (52 tests)
+cd gis && python -m pytest -q tests
 ```
 
-This runs the type-check and production build, with output written to `frontend/dist`.
+---
 
-### TypeScript engine tests
-
-```bash
-cd ../engine/ts
-npm install
-npm test
-```
-
-The project currently reports 25 TypeScript engine tests.
-
-### Python reference engine tests
-
-On Windows:
-
-```bash
-cd ../
-python -m venv .venv
-.venv\Scripts\pip install -r requirements.txt
-.venv\Scripts\python -m pytest -q
-```
-
-On macOS/Linux, use the corresponding `.venv/bin/` executables.
-
-The project currently reports 115 Python reference-engine tests.
-
-### GIS and data-processing tests
-
-From the repository root, after setting up the Python environment:
-
-```bash
-cd gis
-..\engine\.venv\Scripts\python -m pytest -q tests
-```
-
-The project currently reports 52 GIS, Mars Trek and Curiosity data tests, designed to run without network access.
-
-Test counts describe the repository's reported test suite; they do not by themselves establish scientific or operational validation of the terrain data. We did most of the test using Super Intelligence [The testing data is generated and testing is doen using SI]
-
-
-## License, Citations and Disclaimer
+## License, Citations and Safety Disclaimer
 
 ### Open-Source Licensing
 MARGA original work is released under the OSI-compliant **[Apache License, Version 2.0](./LICENSE)**.
@@ -384,11 +235,9 @@ MARGA original work is released under the OSI-compliant **[Apache License, Versi
 ### Third-Party Materials & Data Citations
 Detailed licensing, credits, and citations for third-party open-source libraries and NASA Planetary Data System (PDS) datasets used in this project are documented in **[THIRD_PARTY_LICENSES.md](./THIRD_PARTY_LICENSES.md)**.
 
-### Disclaimer
+### Expanded Safety Disclaimer
 MARGA is a research and decision-support prototype built using historical NASA mission data and project-prepared terrain products.
 
-The application provides route estimates based on the available terrain model and configured assumptions. These routes do not guarantee safe traversal and do not represent certified astronaut mobility parameters.
-
-The Gale Crater elevation model is currently marked as unvalidated. Users should treat its route outputs as experimental until the data and calculations have been independently checked.
-
-MARGA is intended to demonstrate how scientific observations, planetary mapping and terrain-aware route planning can be brought together in one application.
+- **Non-Certified Estimates**: All calculated route recommendations, traversal difficulty scores, slope cost limits, estimated travel times, and EVA budget margins are heuristic approximations calculated from an unvalidated terrain model and simplified mobility assumptions.
+- **Astronaut Safety**: These route outputs do **NOT** constitute certified astronaut safety recommendations, life-critical navigation advice, or flight-approved mission parameters.
+- **Experimental Status**: The Gale Crater elevation model and cost rasters are experimental. Route feasibility must be independently verified by certified mission operations and planetary safety teams before any physical surface traversal.
