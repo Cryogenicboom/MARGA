@@ -53,8 +53,8 @@ run the below commands in shell:
 <br>
 
 ```bash
-git clone https://github.com/coding-otter/MARGA-FINAL.git
-cd MARGA-FINAL
+git clone https://github.com/Cryogenicboom/MARGA.git
+cd MARGA
 ```
 <br>
 
