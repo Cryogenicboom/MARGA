@@ -376,8 +376,15 @@ The project currently reports 52 GIS, Mars Trek and Curiosity data tests, design
 Test counts describe the repository's reported test suite; they do not by themselves establish scientific or operational validation of the terrain data. We did most of the test using Super Intelligence [The testing data is generated and testing is doen using SI]
 
 
-## License and Disclaimer
+## License, Citations and Disclaimer
 
+### Open-Source Licensing
+MARGA original work is released under the OSI-compliant **[Apache License, Version 2.0](./LICENSE)**.
+
+### Third-Party Materials & Data Citations
+Detailed licensing, credits, and citations for third-party open-source libraries and NASA Planetary Data System (PDS) datasets used in this project are documented in **[THIRD_PARTY_LICENSES.md](./THIRD_PARTY_LICENSES.md)**.
+
+### Disclaimer
 MARGA is a research and decision-support prototype built using historical NASA mission data and project-prepared terrain products.
 
 The application provides route estimates based on the available terrain model and configured assumptions. These routes do not guarantee safe traversal and do not represent certified astronaut mobility parameters.
