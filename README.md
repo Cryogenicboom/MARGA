@@ -7,6 +7,12 @@ MARGA is an offline-first, lightweight Mars route-planning application designed 
 
 **Live Prototype:** https://marga-wugg.vercel.app/
 
+## Interface Preview
+
+![MARGA mission-planning dashboard](./docs/images/marga-ui-preview.svg)
+
+This dashboard combines route planning, terrain analysis, and mission context in a single offline-capable planning view. The interface includes layer controls, target selection, elevation profile analysis, and an EVA summary for scientific traverses in Gale Crater.
+
 ---
 
 ## NASA Space Apps Challenge Alignment
